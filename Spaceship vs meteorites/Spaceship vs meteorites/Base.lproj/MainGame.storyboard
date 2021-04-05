@@ -20,10 +20,43 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-f8-PTj">
-                                <rect key="frame" x="157" y="696" width="100" height="100"/>
+                                <rect key="frame" x="157" y="692" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="first_spaceship"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="venus" translatesAutoresizingMaskIntoConstraints="NO" id="S2x-Ck-EUa">
+                                <rect key="frame" x="308" y="589" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-ca-YdS">
+                                <rect key="frame" x="-131" y="734" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="JER-Pg-1cC">
+                                <rect key="frame" x="290" y="202" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.87101287941564842" blue="0.58924055153182031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="battery" translatesAutoresizingMaskIntoConstraints="NO" id="VWC-E9-6lT">
+                                <rect key="frame" x="182" y="55" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="jZn-25-N9R">
+                                <rect key="frame" x="-50" y="179" width="100" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-pw-Jjo">
+                                <rect key="frame" x="277" y="16" width="50" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_red_meteorite" translatesAutoresizingMaskIntoConstraints="NO" id="Atf-hB-zer">
+                                <rect key="frame" x="98" y="55" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ufo" translatesAutoresizingMaskIntoConstraints="NO" id="s1F-Pn-3gA">
+                                <rect key="frame" x="231" y="138" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ym8-Qe-a9k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -41,8 +74,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="battery" width="256" height="256"/>
+        <image name="earth" width="256" height="256"/>
         <image name="first_spaceship" width="256" height="256"/>
+        <image name="ic_red_meteorite" width="256" height="256"/>
         <image name="main_background-1" width="1587" height="2245"/>
+        <image name="moon" width="256" height="256"/>
+        <image name="rock" width="256" height="256"/>
+        <image name="satellite" width="256" height="256"/>
+        <image name="ufo" width="512" height="512"/>
+        <image name="venus" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
