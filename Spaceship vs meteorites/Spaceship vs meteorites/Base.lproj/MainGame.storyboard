@@ -25,28 +25,24 @@
                                 <state key="normal" image="ic_first_spaceship"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_venus" translatesAutoresizingMaskIntoConstraints="NO" id="S2x-Ck-EUa">
-                                <rect key="frame" x="308" y="589" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_satellite" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-ca-YdS">
-                                <rect key="frame" x="-131" y="734" width="240" height="128"/>
+                                <rect key="frame" x="351" y="602" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_moon" translatesAutoresizingMaskIntoConstraints="NO" id="JER-Pg-1cC">
-                                <rect key="frame" x="290" y="202" width="240" height="128"/>
+                                <rect key="frame" x="351" y="211" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.87101287941564842" blue="0.58924055153182031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_battery" translatesAutoresizingMaskIntoConstraints="NO" id="VWC-E9-6lT">
-                                <rect key="frame" x="182" y="55" width="50" height="50"/>
+                                <rect key="frame" x="215" y="163" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_earth" translatesAutoresizingMaskIntoConstraints="NO" id="jZn-25-N9R">
-                                <rect key="frame" x="-50" y="179" width="100" height="128"/>
+                                <rect key="frame" x="-50" y="179" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_brown_meteorite" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-pw-Jjo">
-                                <rect key="frame" x="277" y="16" width="50" height="128"/>
+                                <rect key="frame" x="260" y="55" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_red_meteorite" translatesAutoresizingMaskIntoConstraints="NO" id="Atf-hB-zer">
@@ -54,7 +50,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_UFO" translatesAutoresizingMaskIntoConstraints="NO" id="s1F-Pn-3gA">
-                                <rect key="frame" x="231" y="138" width="50" height="50"/>
+                                <rect key="frame" x="182" y="55" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="alk-hP-G7U">
+                                <rect key="frame" x="132" y="858" width="150" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_satellite" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-ca-YdS">
+                                <rect key="frame" x="-34" y="774" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
