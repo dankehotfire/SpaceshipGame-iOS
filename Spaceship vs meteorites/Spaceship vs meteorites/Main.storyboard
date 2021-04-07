@@ -26,20 +26,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoF-nw-cce">
-                                <rect key="frame" x="26" y="704" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ic_second_spaceship"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-t1-wRB">
-                                <rect key="frame" x="157" y="703" width="100" height="100"/>
+                                <rect key="frame" x="26" y="703" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ic_first_spaceship"/>
+                                <state key="normal" image="ic_first_spaceship"/>
+                                <connections>
+                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="dbm-wQ-f2b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-8O-9J6">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="ic_play_button"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="3Rn-gr-yQm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your ship:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlC-K1-sie">
                                 <rect key="frame" x="26" y="618" width="363" height="50"/>
@@ -48,10 +49,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzQ-cW-Kfv">
-                                <rect key="frame" x="294" y="704" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzQ-cW-Kfv">
+                                <rect key="frame" x="280" y="704" width="114" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ic_third_spaceship"/>
+                                <state key="normal" image="ic_third_spaceship"/>
+                                <connections>
+                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="nfB-Lg-ELW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoF-nw-cce">
+                                <rect key="frame" x="157" y="704" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic_second_spaceship"/>
+                                <connections>
+                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="7be-Dd-RyY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ejk-DN-NXn"/>
@@ -63,10 +75,16 @@
                             <constraint firstItem="WAA-Vp-6lw" firstAttribute="leading" secondItem="Ejk-DN-NXn" secondAttribute="leading" id="znM-oN-3eO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstShipButton" destination="kZi-t1-wRB" id="qMg-jv-KyF"/>
+                        <outlet property="playButton" destination="PfX-8O-9J6" id="2Qn-nO-b9i"/>
+                        <outlet property="secondShipButton" destination="FoF-nw-cce" id="otF-Kb-Cvr"/>
+                        <outlet property="thirdShipButton" destination="VzQ-cW-Kfv" id="9wP-YH-dfj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q9E-tb-VFk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2004" y="-798"/>
+            <point key="canvasLocation" x="-2288.4057971014495" y="-808.25892857142856"/>
         </scene>
     </scenes>
     <resources>

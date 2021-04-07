@@ -8,11 +8,26 @@
 import UIKit
 
 class StartGameViewController: UIViewController {
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var firstShipButton: UIButton!
+    @IBOutlet weak var secondShipButton: UIButton!
+    @IBOutlet weak var thirdShipButton: UIButton!
+
+    var selectedShip = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        let destinationVC = MainGameViewController.instantiate()
+        destinationVC.modalPresentationStyle = .fullScreen
+        destinationVC.currentShip.setImage(selectedShip.currentImage, for: .normal)
+        present(destinationVC, animated: true, completion: nil)
+    }
+
+
+    @IBAction func shipButtonPressed(_ sender: UIButton) {
+        selectedShip.setImage(sender.currentImage, for: .normal)
+    }
 }

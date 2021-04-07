@@ -26,6 +26,9 @@
                                 <state key="normal" title="Menu">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="menuButtonPressed:" destination="rMd-F0-15K" eventType="touchUpInside" id="Mm1-Fn-x06"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXX-Yv-5Tf">
                                 <rect key="frame" x="73" y="630" width="138" height="52"/>
@@ -34,6 +37,9 @@
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="rMd-F0-15K" eventType="touchUpInside" id="xHi-fy-i51"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-es-iEr">
                                 <rect key="frame" x="168" y="67" width="226" height="40"/>
@@ -66,6 +72,9 @@
                             <constraint firstAttribute="bottom" secondItem="GeT-DZ-Cdz" secondAttribute="bottom" id="wGJ-j6-3w6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="wty-Oo-bQ8" id="omk-ZO-RZB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aE-kc-qK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
