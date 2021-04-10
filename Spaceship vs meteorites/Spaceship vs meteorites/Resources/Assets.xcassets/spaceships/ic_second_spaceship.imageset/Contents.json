@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "ic_second_spaceship.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "second_spaceship.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

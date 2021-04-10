@@ -34,14 +34,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-t1-wRB">
-                                <rect key="frame" x="26" y="703" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ic_first_spaceship"/>
-                                <connections>
-                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="dbm-wQ-f2b"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-8O-9J6">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,15 +43,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzQ-cW-Kfv">
-                                <rect key="frame" x="280" y="704" width="114" height="100"/>
+                                <rect key="frame" x="296" y="704" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ic_third_spaceship"/>
                                 <connections>
                                     <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="nfB-Lg-ELW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoF-nw-cce">
-                                <rect key="frame" x="157" y="704" width="100" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoF-nw-cce">
+                                <rect key="frame" x="177" y="704" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ic_second_spaceship"/>
                                 <connections>
@@ -80,6 +72,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-t1-wRB">
+                                <rect key="frame" x="52" y="704" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic_first_spaceship"/>
+                                <connections>
+                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="dbm-wQ-f2b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ejk-DN-NXn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -104,10 +104,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_first_spaceship" width="256" height="256"/>
+        <image name="ic_first_spaceship" width="527" height="725"/>
         <image name="ic_play_button" width="256" height="256"/>
-        <image name="ic_second_spaceship" width="256" height="256"/>
-        <image name="ic_third_spaceship" width="256" height="256"/>
+        <image name="ic_second_spaceship" width="530" height="725"/>
+        <image name="ic_third_spaceship" width="438" height="725"/>
         <image name="main_background" width="793.5" height="1122.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

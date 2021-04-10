@@ -69,11 +69,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-f8-PTj">
-                                <rect key="frame" x="165" y="678" width="85" height="85"/>
+                                <rect key="frame" x="167" y="681" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" image="first_spaceship"/>
+                                <state key="normal" image="second_spaceship 1"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.ContentMode">
                                         <integer key="value" value="1"/>
@@ -114,7 +114,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first_spaceship" width="85.333335876464844" height="85.333335876464844"/>
         <image name="ic_UFO" width="512" height="512"/>
         <image name="ic_battery" width="256" height="256"/>
         <image name="ic_brown_meteorite" width="256" height="256"/>
@@ -124,6 +123,7 @@
         <image name="ic_satellite" width="256" height="256"/>
         <image name="ic_venus" width="256" height="256"/>
         <image name="main_background-1" width="1587" height="2245"/>
+        <image name="second_spaceship 1" width="179" height="244.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

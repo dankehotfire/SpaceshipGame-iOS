@@ -5,11 +5,11 @@
       "scale" : "1x"
     },
     {
+      "filename" : "second_spaceship 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "first_spaceship@2x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
