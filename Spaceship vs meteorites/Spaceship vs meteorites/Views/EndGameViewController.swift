@@ -26,11 +26,7 @@ class EndGameViewController: UIViewController {
     }
 
     @IBAction func menuButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        guard let destinationVC = storyboard.instantiateInitialViewController() as? StartGameViewController else {
-            fatalError("Can't init view controller from storyboard")
-        }
-
+        let destinationVC = StartGameViewController.instantiate()
         destinationVC.modalPresentationStyle = .fullScreen
         present(destinationVC, animated: true, completion: nil)
     }
