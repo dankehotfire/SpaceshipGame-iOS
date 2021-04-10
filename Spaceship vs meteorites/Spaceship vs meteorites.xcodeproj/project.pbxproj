@@ -13,10 +13,12 @@
 		721EF53E2619FE2E00DA8B30 /* MainGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF53C2619FE2E00DA8B30 /* MainGameViewController.storyboard */; };
 		721EF5402619FE3000DA8B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721EF53F2619FE3000DA8B30 /* Assets.xcassets */; };
 		721EF5432619FE3000DA8B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF5412619FE3000DA8B30 /* LaunchScreen.storyboard */; };
-		721EF54C2619FE4100DA8B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF54B2619FE4100DA8B30 /* Main.storyboard */; };
+		721EF54C2619FE4100DA8B30 /* StartGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */; };
 		721EF54F2619FE4A00DA8B30 /* EndGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */; };
 		721EF5542619FE6E00DA8B30 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */; };
 		721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */; };
+		725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753202621AD9D0051EAAD /* UIColor+Hex.swift */; };
+		725753242621B0650051EAAD /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753232621B0650051EAAD /* UIView+Shadow.swift */; };
 		72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958966261E56C1008AD214 /* Recursive-Regular.ttf */; };
 		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */; };
@@ -31,10 +33,12 @@
 		721EF53F2619FE3000DA8B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		721EF5422619FE3000DA8B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		721EF5442619FE3000DA8B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		721EF54B2619FE4100DA8B30 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartGameViewController.storyboard; sourceTree = "<group>"; };
 		721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndGameViewController.storyboard; sourceTree = "<group>"; };
 		721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		725753202621AD9D0051EAAD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		725753232621B0650051EAAD /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		72958966261E56C1008AD214 /* Recursive-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive-Regular.ttf"; sourceTree = "<group>"; };
 		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+StoryboardInit.swift"; sourceTree = "<group>"; };
@@ -72,20 +76,54 @@
 			children = (
 				721EF5362619FE2E00DA8B30 /* AppDelegate.swift */,
 				721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */,
-				72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */,
-				721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */,
-				721EF53A2619FE2E00DA8B30 /* MainGameViewController.swift */,
-				721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */,
-				721EF54B2619FE4100DA8B30 /* Main.storyboard */,
-				721EF53C2619FE2E00DA8B30 /* MainGameViewController.storyboard */,
-				721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */,
+				7257532C2621FA5A0051EAAD /* Resources */,
+				7257532D2621FA6D0051EAAD /* Extensions */,
+				7257532E2621FA830051EAAD /* Views */,
+				725753362621FCA70051EAAD /* Storyboards */,
+			);
+			path = "Spaceship vs meteorites";
+			sourceTree = "<group>";
+		};
+		7257532C2621FA5A0051EAAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				721EF53F2619FE3000DA8B30 /* Assets.xcassets */,
-				721EF5412619FE3000DA8B30 /* LaunchScreen.storyboard */,
 				721EF5442619FE3000DA8B30 /* Info.plist */,
 				72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */,
 				72958966261E56C1008AD214 /* Recursive-Regular.ttf */,
 			);
-			path = "Spaceship vs meteorites";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7257532D2621FA6D0051EAAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				725753232621B0650051EAAD /* UIView+Shadow.swift */,
+				725753202621AD9D0051EAAD /* UIColor+Hex.swift */,
+				72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7257532E2621FA830051EAAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */,
+				721EF53A2619FE2E00DA8B30 /* MainGameViewController.swift */,
+				721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		725753362621FCA70051EAAD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */,
+				721EF53C2619FE2E00DA8B30 /* MainGameViewController.storyboard */,
+				721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */,
+				721EF5412619FE3000DA8B30 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +189,7 @@
 				721EF5402619FE3000DA8B30 /* Assets.xcassets in Resources */,
 				721EF54F2619FE4A00DA8B30 /* EndGameViewController.storyboard in Resources */,
 				721EF53E2619FE2E00DA8B30 /* MainGameViewController.storyboard in Resources */,
-				721EF54C2619FE4100DA8B30 /* Main.storyboard in Resources */,
+				721EF54C2619FE4100DA8B30 /* StartGameViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725753242621B0650051EAAD /* UIView+Shadow.swift in Sources */,
+				725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */,
 				721EF53B2619FE2E00DA8B30 /* MainGameViewController.swift in Sources */,
 				721EF5372619FE2E00DA8B30 /* AppDelegate.swift in Sources */,
 				721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */,
@@ -316,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BRB6N3TF;
-				INFOPLIST_FILE = "Spaceship vs meteorites/Info.plist";
+				INFOPLIST_FILE = "Spaceship vs meteorites/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BRB6N3TF;
-				INFOPLIST_FILE = "Spaceship vs meteorites/Info.plist";
+				INFOPLIST_FILE = "Spaceship vs meteorites/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
