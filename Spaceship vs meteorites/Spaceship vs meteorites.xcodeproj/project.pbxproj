@@ -18,7 +18,7 @@
 		721EF5542619FE6E00DA8B30 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */; };
 		721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */; };
 		725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753202621AD9D0051EAAD /* UIColor+Hex.swift */; };
-		725753242621B0650051EAAD /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753232621B0650051EAAD /* UIView+Shadow.swift */; };
+		725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */; };
 		72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958966261E56C1008AD214 /* Recursive-Regular.ttf */; };
 		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */; };
@@ -38,7 +38,7 @@
 		721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		725753202621AD9D0051EAAD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		725753232621B0650051EAAD /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow+CornerRadius.swift"; sourceTree = "<group>"; };
 		72958966261E56C1008AD214 /* Recursive-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive-Regular.ttf"; sourceTree = "<group>"; };
 		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+StoryboardInit.swift"; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		7257532D2621FA6D0051EAAD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				725753232621B0650051EAAD /* UIView+Shadow.swift */,
+				725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */,
 				725753202621AD9D0051EAAD /* UIColor+Hex.swift */,
 				72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */,
 			);
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				725753242621B0650051EAAD /* UIView+Shadow.swift in Sources */,
+				725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */,
 				725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */,
 				721EF53B2619FE2E00DA8B30 /* MainGameViewController.swift in Sources */,
 				721EF5372619FE2E00DA8B30 /* AppDelegate.swift in Sources */,

@@ -76,7 +76,7 @@ class MainGameViewController: UIViewController {
     @IBAction func onPan(_ sender: UIPanGestureRecognizer) {
         let move = sender.translation(in: view)
         if let view = sender.view {
-            view.center = CGPoint(x: view.center.x + move.x, y: view.center.y + move.y)
+            view.center = CGPoint(x: view.center.x + move.x, y: view.center.y)
         }
         sender.setTranslation(CGPoint.zero, in: view)
     }
