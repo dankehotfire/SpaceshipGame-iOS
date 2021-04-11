@@ -21,7 +21,7 @@
 		725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */; };
 		72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958966261E56C1008AD214 /* Recursive-Regular.ttf */; };
 		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
-		72DA0FDD261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */; };
+		72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow+CornerRadius.swift"; sourceTree = "<group>"; };
 		72958966261E56C1008AD214 /* Recursive-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive-Regular.ttf"; sourceTree = "<group>"; };
 		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
-		72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+StoryboardInit.swift"; sourceTree = "<group>"; };
+		72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			children = (
 				725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */,
 				725753202621AD9D0051EAAD /* UIColor+Hex.swift */,
-				72DA0FDC261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift */,
+				72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -136,6 +136,7 @@
 				721EF52F2619FE2E00DA8B30 /* Sources */,
 				721EF5302619FE2E00DA8B30 /* Frameworks */,
 				721EF5312619FE2E00DA8B30 /* Resources */,
+				72575340262325E30051EAAD /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -195,6 +196,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72575340262325E30051EAAD /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		721EF52F2619FE2E00DA8B30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -206,7 +228,7 @@
 				721EF5372619FE2E00DA8B30 /* AppDelegate.swift in Sources */,
 				721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */,
 				721EF5392619FE2E00DA8B30 /* SceneDelegate.swift in Sources */,
-				72DA0FDD261C7FDC00C0B94F /* UIViewcontroller+StoryboardInit.swift in Sources */,
+				72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */,
 				721EF5542619FE6E00DA8B30 /* StartGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

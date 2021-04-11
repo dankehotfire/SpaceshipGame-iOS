@@ -8,16 +8,16 @@
 import UIKit
 
 class MainGameViewController: UIViewController {
-    var timer = Timer()
+    private var timer = Timer()
     let currentShip = UIButton()
 
-    @IBOutlet weak var firstMeteoriteImage: UIImageView!
-    @IBOutlet weak var UFOImage: UIImageView!
-    @IBOutlet weak var secondMeteoriteImage: UIImageView!
-    @IBOutlet weak var batteryImage: UIImageView!
-    @IBOutlet weak var spaceshipButton: UIButton!
-    @IBOutlet weak var progressView: UIProgressView!
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet private weak var firstMeteoriteImage: UIImageView!
+    @IBOutlet private weak var UFOImage: UIImageView!
+    @IBOutlet private weak var secondMeteoriteImage: UIImageView!
+    @IBOutlet private weak var batteryImage: UIImageView!
+    @IBOutlet private weak var spaceshipButton: UIButton!
+    @IBOutlet private weak var progressView: UIProgressView!
+    @IBOutlet private weak var scoreLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +31,15 @@ class MainGameViewController: UIViewController {
 
         timer = Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(meteoriteAnimation), userInfo: nil, repeats: true)
     }
+    @IBAction private func onPan(_ sender: UIPanGestureRecognizer) {
+        let move = sender.translation(in: view)
+        if let view = sender.view {
+            view.center = CGPoint(x: view.center.x + move.x, y: view.center.y + move.y)
+        }
+        sender.setTranslation(CGPoint.zero, in: view)
+    }
 
-    func metoriteMovement (object: UIImageView) {
+    private func metoriteMovement (object: UIImageView) {
         if object.frame.origin.y > view.frame.height {
             object.frame.origin.y = CGFloat(Int.random(in: (-500)...0))
         } else {
@@ -40,17 +47,18 @@ class MainGameViewController: UIViewController {
         }
     }
 
-    @objc func meteoriteAnimation()  {
+    @objc private func meteoriteAnimation() {
         let destinationVC = EndGameViewController.instantiate()
+        let shipFrame = spaceshipButton.frame
 
         metoriteMovement(object: firstMeteoriteImage)
         metoriteMovement(object: secondMeteoriteImage)
         metoriteMovement(object: batteryImage)
         metoriteMovement(object: UFOImage)
 
-        progressView.progress -= 0.0001
+        progressView.progress -= 0.000_1
 
-        if (spaceshipButton.frame.intersects(firstMeteoriteImage.frame)) || spaceshipButton.frame.intersects(secondMeteoriteImage.frame) || spaceshipButton.frame.intersects(UFOImage.frame) {
+        if (shipFrame.intersects(firstMeteoriteImage.frame)) || shipFrame.intersects(secondMeteoriteImage.frame) || shipFrame.intersects(UFOImage.frame) {
             destinationVC.modalPresentationStyle = .fullScreen
             destinationVC.currentShip.setImage(currentShip.currentImage, for: .normal)
             timer.invalidate()
@@ -75,13 +83,4 @@ class MainGameViewController: UIViewController {
             scoreLabel.text = "\(temp)"
         }
     }
-
-    @IBAction func onPan(_ sender: UIPanGestureRecognizer) {
-        let move = sender.translation(in: view)
-        if let view = sender.view {
-            view.center = CGPoint(x: view.center.x + move.x, y: view.center.y + move.y)
-        }
-        sender.setTranslation(CGPoint.zero, in: view)
-    }
 }
-

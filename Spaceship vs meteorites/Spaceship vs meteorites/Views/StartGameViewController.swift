@@ -8,13 +8,13 @@
 import UIKit
 
 class StartGameViewController: UIViewController {
-    var selectedShip = UIButton()
+    private var selectedShip = UIButton()
 
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var firstShipButton: UIButton!
-    @IBOutlet weak var secondShipButton: UIButton!
-    @IBOutlet weak var thirdShipButton: UIButton!
-    @IBOutlet weak var reminderLabel: UILabel!
+    @IBOutlet private weak var playButton: UIButton!
+    @IBOutlet private weak var firstShipButton: UIButton!
+    @IBOutlet private weak var secondShipButton: UIButton!
+    @IBOutlet private weak var thirdShipButton: UIButton!
+    @IBOutlet private weak var reminderLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class StartGameViewController: UIViewController {
         reminderLabel.isHidden = true
     }
 
-    @IBAction func playButtonPressed(_ sender: UIButton) {
+    @IBAction private func playButtonPressed(_ sender: UIButton) {
         let destinationVC = MainGameViewController.instantiate()
         destinationVC.modalPresentationStyle = .fullScreen
 
@@ -34,19 +34,18 @@ class StartGameViewController: UIViewController {
         }
     }
 
-
-    @IBAction func shipButtonPressed(_ sender: UIButton) {
+    @IBAction private func shipButtonPressed(_ sender: UIButton) {
         switch sender.tag {
         case 1:
-            firstShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize(width: 0, height: 0), radius: 20)
+            firstShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize.zero, radius: 20)
             secondShipButton.layer.shadowOpacity = 0
             thirdShipButton.layer.shadowOpacity = 0
         case 2:
-            secondShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize(width: 0, height: 0), radius: 20)
+            secondShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize.zero, radius: 20)
             firstShipButton.layer.shadowOpacity = 0
             thirdShipButton.layer.shadowOpacity = 0
         case 3:
-            thirdShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize(width: 0, height: 0), radius: 20)
+            thirdShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize.zero, radius: 20)
             firstShipButton.layer.shadowOpacity = 0
             secondShipButton.layer.shadowOpacity = 0
         default:

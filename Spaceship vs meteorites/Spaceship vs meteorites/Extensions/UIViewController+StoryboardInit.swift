@@ -1,5 +1,5 @@
 //
-//  UIViewcontroller+StoryboardInstantiate.swift
+//  UIViewController+StoryboardInstantiate.swift
 //  Spaceship vs meteorites
 //
 //  Created by Danil Nurgaliev on 06.04.2021.
