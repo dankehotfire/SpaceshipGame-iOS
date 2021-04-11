@@ -41,6 +41,8 @@ class MainGameViewController: UIViewController {
     }
 
     @objc func meteoriteAnimation()  {
+        let destinationVC = EndGameViewController.instantiate()
+
         metoriteMovement(object: firstMeteoriteImage)
         metoriteMovement(object: secondMeteoriteImage)
         metoriteMovement(object: batteryImage)
@@ -49,9 +51,10 @@ class MainGameViewController: UIViewController {
         progressView.progress -= 0.0001
 
         if (spaceshipButton.frame.intersects(firstMeteoriteImage.frame)) || spaceshipButton.frame.intersects(secondMeteoriteImage.frame) || spaceshipButton.frame.intersects(UFOImage.frame) {
-            let destinationVC = EndGameViewController.instantiate()
             destinationVC.modalPresentationStyle = .fullScreen
             destinationVC.currentShip.setImage(currentShip.currentImage, for: .normal)
+            timer.invalidate()
+            destinationVC.score = scoreLabel.text ?? "0"
             present(destinationVC, animated: true, completion: nil)
         }
 
@@ -60,7 +63,7 @@ class MainGameViewController: UIViewController {
 
             batteryImage.frame.origin.y = 0 - 80
             batteryImage.frame.origin.x = CGFloat(random)
-    
+
             guard let score = scoreLabel.text else {
                 return
             }
@@ -76,7 +79,7 @@ class MainGameViewController: UIViewController {
     @IBAction func onPan(_ sender: UIPanGestureRecognizer) {
         let move = sender.translation(in: view)
         if let view = sender.view {
-            view.center = CGPoint(x: view.center.x + move.x, y: view.center.y)
+            view.center = CGPoint(x: view.center.x + move.x, y: view.center.y + move.y)
         }
         sender.setTranslation(CGPoint.zero, in: view)
     }

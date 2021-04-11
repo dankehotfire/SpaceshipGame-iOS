@@ -24,45 +24,49 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endGame_background" translatesAutoresizingMaskIntoConstraints="NO" id="GeT-DZ-Cdz">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATp-cs-HZt">
-                                <rect key="frame" x="20" y="660" width="244" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="menuButtonPressed:" destination="rMd-F0-15K" eventType="touchUpInside" id="Mm1-Fn-x06"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXX-Yv-5Tf">
-                                <rect key="frame" x="66" y="609" width="152" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
-                                <state key="normal" title="Restart">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="restartButtonPressed:" destination="rMd-F0-15K" eventType="touchUpInside" id="xHi-fy-i51"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-es-iEr">
-                                <rect key="frame" x="172" y="54" width="222" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ljp-Be-m0z">
+                                <rect key="frame" x="40" y="609" width="152" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXX-Yv-5Tf">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="60"/>
+                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
+                                        <state key="normal" title="Restart">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restartButtonPressed:" destination="rMd-F0-15K" eventType="touchUpInside" id="xHi-fy-i51"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATp-cs-HZt">
+                                        <rect key="frame" x="23.5" y="60" width="105" height="60"/>
+                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
+                                        <state key="normal" title="Menu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonPressed:" destination="rMd-F0-15K" eventType="touchUpInside" id="Mm1-Fn-x06"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-es-iEr">
+                                <rect key="frame" x="172" y="64" width="222" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="dae-db-5JX"/>
+                                    <constraint firstAttribute="width" constant="222" id="tNr-I8-ZMt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkS-VZ-7qH">
-                                <rect key="frame" x="86" y="391" width="243" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkS-VZ-7qH">
+                                <rect key="frame" x="85.5" y="421" width="243" height="54"/>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wty-Oo-bQ8">
-                                <rect key="frame" x="268" y="110" width="30" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wty-Oo-bQ8">
+                                <rect key="frame" x="268" y="117" width="30" height="60"/>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -71,10 +75,18 @@
                         <viewLayoutGuide key="safeArea" id="MBI-d2-QQf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wty-Oo-bQ8" firstAttribute="top" secondItem="n7a-es-iEr" secondAttribute="bottom" constant="5" id="1TV-nR-HZc"/>
                             <constraint firstItem="GeT-DZ-Cdz" firstAttribute="leading" secondItem="MBI-d2-QQf" secondAttribute="leading" id="7oU-Ra-yUd"/>
                             <constraint firstItem="GeT-DZ-Cdz" firstAttribute="top" secondItem="FHx-qL-K5T" secondAttribute="top" id="BUZ-UB-l6R"/>
+                            <constraint firstItem="MkS-VZ-7qH" firstAttribute="centerX" secondItem="FHx-qL-K5T" secondAttribute="centerX" id="ELl-DZ-0bV"/>
+                            <constraint firstItem="MkS-VZ-7qH" firstAttribute="centerY" secondItem="FHx-qL-K5T" secondAttribute="centerY" id="PvO-E1-s4n"/>
+                            <constraint firstItem="Ljp-Be-m0z" firstAttribute="top" secondItem="MkS-VZ-7qH" secondAttribute="bottom" constant="134" id="Vz0-er-aQ7"/>
+                            <constraint firstItem="wty-Oo-bQ8" firstAttribute="centerX" secondItem="n7a-es-iEr" secondAttribute="centerX" id="pmk-pc-Fvh"/>
+                            <constraint firstItem="MBI-d2-QQf" firstAttribute="trailing" secondItem="n7a-es-iEr" secondAttribute="trailing" constant="20" id="sLL-Ie-Xjd"/>
+                            <constraint firstItem="Ljp-Be-m0z" firstAttribute="leading" secondItem="MBI-d2-QQf" secondAttribute="leading" constant="40" id="uBo-fR-pLw"/>
                             <constraint firstItem="GeT-DZ-Cdz" firstAttribute="trailing" secondItem="MBI-d2-QQf" secondAttribute="trailing" id="uFa-WC-6yc"/>
                             <constraint firstAttribute="bottom" secondItem="GeT-DZ-Cdz" secondAttribute="bottom" id="wGJ-j6-3w6"/>
+                            <constraint firstItem="n7a-es-iEr" firstAttribute="top" secondItem="MBI-d2-QQf" secondAttribute="top" constant="20" id="wTh-rf-zNQ"/>
                         </constraints>
                     </view>
                     <connections>

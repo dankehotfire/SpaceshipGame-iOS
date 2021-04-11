@@ -27,66 +27,91 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="WAA-Vp-6lw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Space Racing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfl-QL-a5Z">
-                                <rect key="frame" x="73" y="222" width="269" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Racing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfl-QL-a5Z">
+                                <rect key="frame" x="77" y="248" width="260" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T2c-uO-9jF"/>
+                                    <constraint firstAttribute="width" constant="260" id="zlr-99-D4I"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-8O-9J6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-8O-9J6">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1Pc-RH-Xqx"/>
+                                    <constraint firstAttribute="height" constant="100" id="sXN-rG-ZO0"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="ic_play_button"/>
                                 <connections>
                                     <action selector="playButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="3Rn-gr-yQm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzQ-cW-Kfv">
-                                <rect key="frame" x="296" y="704" width="80" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ic_third_spaceship"/>
-                                <connections>
-                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="nfB-Lg-ELW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoF-nw-cce">
-                                <rect key="frame" x="177" y="704" width="80" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ic_second_spaceship"/>
-                                <connections>
-                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="7be-Dd-RyY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your ship:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlC-K1-sie">
-                                <rect key="frame" x="26" y="619" width="363" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your ship:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlC-K1-sie">
+                                <rect key="frame" x="30.5" y="608" width="353.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nJq-SC-r9u"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please, choose a ship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coi-Un-X5a">
-                                <rect key="frame" x="117" y="516" width="181" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, choose a ship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coi-Un-X5a">
+                                <rect key="frame" x="116.5" y="518" width="181" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="VcM-rn-pxn"/>
+                                    <constraint firstAttribute="height" constant="25" id="WfZ-n9-9WA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Recursive-Regular" family="Recursive" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-t1-wRB">
-                                <rect key="frame" x="52" y="704" width="80" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ic_first_spaceship"/>
-                                <connections>
-                                    <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="dbm-wQ-f2b"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="0xO-Uj-gto">
+                                <rect key="frame" x="40" y="688" width="334" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-t1-wRB">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="108"/>
+                                        <state key="normal" image="ic_first_spaceship"/>
+                                        <connections>
+                                            <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="dbm-wQ-f2b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoF-nw-cce">
+                                        <rect key="frame" x="125.5" y="0.0" width="83" height="108"/>
+                                        <state key="normal" image="ic_second_spaceship"/>
+                                        <connections>
+                                            <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="7be-Dd-RyY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzQ-cW-Kfv">
+                                        <rect key="frame" x="250.5" y="0.0" width="83.5" height="108"/>
+                                        <state key="normal" image="ic_third_spaceship"/>
+                                        <connections>
+                                            <action selector="shipButtonPressed:" destination="Rja-7l-G0f" eventType="touchUpInside" id="nfB-Lg-ELW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ejk-DN-NXn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WAA-Vp-6lw" firstAttribute="top" secondItem="CAy-1L-LcR" secondAttribute="top" id="2O6-HO-knc"/>
+                            <constraint firstItem="vlC-K1-sie" firstAttribute="top" secondItem="PfX-8O-9J6" secondAttribute="bottom" constant="110" id="2rl-dW-gcD"/>
+                            <constraint firstItem="vlC-K1-sie" firstAttribute="centerX" secondItem="CAy-1L-LcR" secondAttribute="centerX" id="480-2D-uEV"/>
+                            <constraint firstAttribute="trailing" secondItem="0xO-Uj-gto" secondAttribute="trailing" constant="40" id="GXX-b5-4tt"/>
+                            <constraint firstItem="PfX-8O-9J6" firstAttribute="top" secondItem="Mfl-QL-a5Z" secondAttribute="bottom" constant="100" id="Olg-kL-CV4"/>
                             <constraint firstItem="WAA-Vp-6lw" firstAttribute="trailing" secondItem="Ejk-DN-NXn" secondAttribute="trailing" id="QKP-nq-rcF"/>
+                            <constraint firstItem="coi-Un-X5a" firstAttribute="centerX" secondItem="CAy-1L-LcR" secondAttribute="centerX" id="TF0-b3-CzO"/>
+                            <constraint firstItem="0xO-Uj-gto" firstAttribute="leading" secondItem="CAy-1L-LcR" secondAttribute="leading" constant="40" id="Zu5-oC-PJ6"/>
+                            <constraint firstAttribute="bottom" secondItem="0xO-Uj-gto" secondAttribute="bottom" constant="100" id="fq0-0A-glk"/>
+                            <constraint firstItem="Mfl-QL-a5Z" firstAttribute="centerX" secondItem="CAy-1L-LcR" secondAttribute="centerX" id="gqU-Qa-17A"/>
+                            <constraint firstItem="0xO-Uj-gto" firstAttribute="top" secondItem="vlC-K1-sie" secondAttribute="bottom" constant="30" id="hwL-YX-VIH"/>
+                            <constraint firstItem="PfX-8O-9J6" firstAttribute="centerX" secondItem="CAy-1L-LcR" secondAttribute="centerX" id="lYj-77-4S6"/>
                             <constraint firstAttribute="bottom" secondItem="WAA-Vp-6lw" secondAttribute="bottom" id="nH6-N7-gEr"/>
+                            <constraint firstItem="PfX-8O-9J6" firstAttribute="centerY" secondItem="CAy-1L-LcR" secondAttribute="centerY" id="rEx-2Z-XHN"/>
+                            <constraint firstItem="coi-Un-X5a" firstAttribute="top" secondItem="PfX-8O-9J6" secondAttribute="bottom" constant="20" id="wVA-b4-r64"/>
                             <constraint firstItem="WAA-Vp-6lw" firstAttribute="leading" secondItem="Ejk-DN-NXn" secondAttribute="leading" id="znM-oN-3eO"/>
                         </constraints>
                     </view>
@@ -104,10 +129,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_first_spaceship" width="527" height="725"/>
+        <image name="ic_first_spaceship" width="263.5" height="362.5"/>
         <image name="ic_play_button" width="256" height="256"/>
-        <image name="ic_second_spaceship" width="530" height="725"/>
-        <image name="ic_third_spaceship" width="438" height="725"/>
+        <image name="ic_second_spaceship" width="265" height="362.5"/>
+        <image name="ic_third_spaceship" width="219" height="362.5"/>
         <image name="main_background" width="793.5" height="1122.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
