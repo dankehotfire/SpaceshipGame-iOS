@@ -21,6 +21,8 @@
 		725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */; };
 		72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958966261E56C1008AD214 /* Recursive-Regular.ttf */; };
 		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
+		72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CEAE16262DC452005828AB /* SettingsViewController.storyboard */; };
+		72CEAE1A262DC477005828AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CEAE19262DC477005828AB /* SettingsViewController.swift */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow+CornerRadius.swift"; sourceTree = "<group>"; };
 		72958966261E56C1008AD214 /* Recursive-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive-Regular.ttf"; sourceTree = "<group>"; };
 		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
+		72CEAE16262DC452005828AB /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		72CEAE19262DC477005828AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */,
+				72CEAE19262DC477005828AB /* SettingsViewController.swift */,
 				721EF53A2619FE2E00DA8B30 /* MainGameViewController.swift */,
 				721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */,
 			);
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */,
+				72CEAE16262DC452005828AB /* SettingsViewController.storyboard */,
 				721EF53C2619FE2E00DA8B30 /* MainGameViewController.storyboard */,
 				721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */,
 				721EF5412619FE3000DA8B30 /* LaunchScreen.storyboard */,
@@ -184,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */,
 				72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */,
 				721EF5432619FE3000DA8B30 /* LaunchScreen.storyboard in Resources */,
 				72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */,
@@ -230,6 +237,7 @@
 				721EF5392619FE2E00DA8B30 /* SceneDelegate.swift in Sources */,
 				72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */,
 				721EF5542619FE6E00DA8B30 /* StartGameViewController.swift in Sources */,
+				72CEAE1A262DC477005828AB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,14 +11,13 @@ class StartGameViewController: UIViewController {
     private var selectedShip = UIButton()
 
     @IBOutlet private weak var playButton: UIButton!
-    @IBOutlet private weak var firstShipButton: UIButton!
-    @IBOutlet private weak var secondShipButton: UIButton!
-    @IBOutlet private weak var thirdShipButton: UIButton!
+    @IBOutlet private weak var settingsButton: UIButton!
     @IBOutlet private weak var reminderLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         playButton.dropShadow(color: .white, opacity: 0.5, offSet: CGSize(width: 0, height: 0.3), radius: 5)
+        settingsButton.cornerRadius(settingsButton.bounds.height / 3)
         reminderLabel.isHidden = true
     }
 
@@ -34,24 +33,10 @@ class StartGameViewController: UIViewController {
         }
     }
 
-    @IBAction private func shipButtonPressed(_ sender: UIButton) {
-        switch sender.tag {
-        case 1:
-            firstShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize.zero, radius: 20)
-            secondShipButton.layer.shadowOpacity = 0
-            thirdShipButton.layer.shadowOpacity = 0
-        case 2:
-            secondShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize.zero, radius: 20)
-            firstShipButton.layer.shadowOpacity = 0
-            thirdShipButton.layer.shadowOpacity = 0
-        case 3:
-            thirdShipButton.dropShadow(color: .red, opacity: 0.5, offSet: CGSize.zero, radius: 20)
-            firstShipButton.layer.shadowOpacity = 0
-            secondShipButton.layer.shadowOpacity = 0
-        default:
-            break
-        }
+    @IBAction private func settingsButtonPressed(_ sender: UIButton) {
+        let destinationVC = SettingsViewController.instantiate()
+        destinationVC.modalPresentationStyle = .fullScreen
 
-        selectedShip.setImage(sender.currentImage, for: .normal)
+        present(destinationVC, animated: true, completion: nil)
     }
 }
