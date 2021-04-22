@@ -58,67 +58,83 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgn-eH-IxT">
-                                <rect key="frame" x="94" y="411" width="44" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgn-eH-IxT" customClass="SelectButton" customModule="Spaceship_vs_meteorites" customModuleProvider="target">
+                                <rect key="frame" x="91" y="410" width="59" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="25"/>
-                                <state key="normal" title="low">
+                                <state key="normal" title="easy">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="gameLevelButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="uga-mG-0Bg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBi-Rh-nhE">
-                                <rect key="frame" x="170" y="410" width="97" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="25"/>
-                                <state key="normal" title="medium">
-                                    <color key="titleColor" systemColor="systemYellowColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-HT-6in">
-                                <rect key="frame" x="292" y="411" width="56" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-HT-6in" customClass="SelectButton" customModule="Spaceship_vs_meteorites" customModuleProvider="target">
+                                <rect key="frame" x="289" y="411" width="56" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="25"/>
                                 <state key="normal" title="hard">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="gameLevelButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="evc-j5-Yo5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pop-th-heX">
-                                <rect key="frame" x="76" y="562" width="80" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ic_first_spaceship"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksF-Jk-6P4">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksF-Jk-6P4" customClass="SelectButton" customModule="Spaceship_vs_meteorites" customModuleProvider="target">
                                 <rect key="frame" x="178" y="562" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ic_second_spaceship"/>
+                                <state key="normal" image="ic_second_spaceship"/>
+                                <connections>
+                                    <action selector="shipButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="VHV-s1-PP3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR8-aS-4PK">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR8-aS-4PK" customClass="SelectButton" customModule="Spaceship_vs_meteorites" customModuleProvider="target">
                                 <rect key="frame" x="280" y="562" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ic_third_spaceship"/>
+                                <state key="normal" image="ic_third_spaceship"/>
+                                <connections>
+                                    <action selector="shipButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="Opf-5L-iNh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pop-th-heX" customClass="SelectButton" customModule="Spaceship_vs_meteorites" customModuleProvider="target">
+                                <rect key="frame" x="66" y="562" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic_first_spaceship"/>
+                                <connections>
+                                    <action selector="shipButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="RxZ-fO-ydw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riV-rS-UMM">
+                                <rect key="frame" x="125" y="790" width="166" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="25"/>
+                                <state key="normal" title="Back to menu" backgroundImage="ic_button_back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToMenuButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="VZA-5j-eLf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-ks-9Df">
-                                <rect key="frame" x="125" y="721" width="178" height="42"/>
+                                <rect key="frame" x="118" y="733" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="25"/>
-                                <state key="normal" title="Apply changes">
+                                <state key="normal" title="Apply changes" backgroundImage="ic_button_back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="applyChangesButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="qC2-0U-mf8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riV-rS-UMM">
-                                <rect key="frame" x="131" y="783" width="166" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBi-Rh-nhE" customClass="SelectButton" customModule="Spaceship_vs_meteorites" customModuleProvider="target">
+                                <rect key="frame" x="170" y="410" width="97" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="25"/>
-                                <state key="normal" title="Back to menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="medium">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="backToMenuButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="VZA-5j-eLf"/>
+                                    <action selector="gameLevelButtonPressed:" destination="hZp-6o-1qk" eventType="touchUpInside" id="xFD-Fu-04G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -134,6 +150,13 @@
                     <connections>
                         <outlet property="applyChangesButton" destination="iR7-ks-9Df" id="grP-0W-74U"/>
                         <outlet property="backToMenuButton" destination="riV-rS-UMM" id="vvz-Qf-QQq"/>
+                        <outlet property="easyLevelButton" destination="mgn-eH-IxT" id="bEf-wY-QQM"/>
+                        <outlet property="firstShipButton" destination="Pop-th-heX" id="OsP-De-ecE"/>
+                        <outlet property="hardLevelButton" destination="CNS-HT-6in" id="OqM-6B-IKJ"/>
+                        <outlet property="mediumLevelButton" destination="wBi-Rh-nhE" id="PSV-zB-2p8"/>
+                        <outlet property="nicknameTextField" destination="g9V-E5-p62" id="gc1-Fk-KUw"/>
+                        <outlet property="secondShipButton" destination="ksF-Jk-6P4" id="nn8-CY-LC3"/>
+                        <outlet property="thirdShipButton" destination="dR8-aS-4PK" id="MdV-jR-zdN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1s-NT-vll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -142,13 +165,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_button_back" width="91" height="22"/>
         <image name="ic_first_spaceship" width="263.5" height="362.5"/>
         <image name="ic_second_spaceship" width="265" height="362.5"/>
         <image name="ic_third_spaceship" width="219" height="362.5"/>
         <image name="main_background" width="793.5" height="1122.5"/>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

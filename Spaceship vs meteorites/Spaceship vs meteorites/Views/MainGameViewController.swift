@@ -21,15 +21,8 @@ class MainGameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        firstMeteoriteImage.frame.origin.y = 0
-        secondMeteoriteImage.frame.origin.y -= 200
-        UFOImage.frame.origin.y -= 400
-        batteryImage.frame.origin.y -= 200
-
-        spaceshipButton.setImage(currentShip.currentImage, for: .normal)
-
-        timer = Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(meteoriteAnimation), userInfo: nil, repeats: true)
+        startSettings()
+        startTimer()
     }
     @IBAction private func onPan(_ sender: UIPanGestureRecognizer) {
         let move = sender.translation(in: view)
@@ -81,6 +74,30 @@ class MainGameViewController: UIViewController {
             progressView.progress += 0.1
             temp += 10
             scoreLabel.text = "\(temp)"
+        }
+    }
+
+    private func startSettings() {
+        firstMeteoriteImage.frame.origin.y = 0
+        secondMeteoriteImage.frame.origin.y -= 200
+        UFOImage.frame.origin.y -= 400
+        batteryImage.frame.origin.y -= 200
+
+        spaceshipButton.setImage(currentShip.currentImage, for: .normal)
+    }
+
+    private func startTimer() {
+        let gameLevel = UserSettings.shared.currentPlayer?.gameLevel
+
+        switch gameLevel {
+        case .easy:
+            timer = Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(meteoriteAnimation), userInfo: nil, repeats: true)
+        case .medium:
+            timer = Timer.scheduledTimer(timeInterval: 0.003, target: self, selector: #selector(meteoriteAnimation), userInfo: nil, repeats: true)
+        case .hard:
+            timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(meteoriteAnimation), userInfo: nil, repeats: true)
+        default:
+            break
         }
     }
 }
