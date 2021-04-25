@@ -16,6 +16,7 @@ class EndGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scoreLabel.text = score
+        saveResult()
     }
 
     @IBAction private func restartButtonPressed(_ sender: UIButton) {
@@ -29,5 +30,12 @@ class EndGameViewController: UIViewController {
         let destinationVC = StartGameViewController.instantiate()
         destinationVC.modalPresentationStyle = .fullScreen
         present(destinationVC, animated: true, completion: nil)
+    }
+
+    private func saveResult() {
+        guard let nickname = UserSettings.shared.currentPlayer?.nickname else {
+            return
+        }
+        Manager.someFunc(result: "\(nickname): \(score)")
     }
 }
