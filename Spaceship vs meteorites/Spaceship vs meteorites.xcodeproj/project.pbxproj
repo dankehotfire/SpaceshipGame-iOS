@@ -19,9 +19,16 @@
 		721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */; };
 		725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753202621AD9D0051EAAD /* UIColor+Hex.swift */; };
 		725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */; };
+		726EF94B2631A3B200D5662A /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726EF94A2631A3B200D5662A /* SelectButton.swift */; };
+		7293BDE9262EE268004062DE /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDE8262EE268004062DE /* UserSettings.swift */; };
+		7293BDEC262EE332004062DE /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDEB262EE332004062DE /* GameLevel.swift */; };
+		7293BDEF262F10BE004062DE /* UIViewController+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */; };
 		72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958966261E56C1008AD214 /* Recursive-Regular.ttf */; };
 		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
+		72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CEAE16262DC452005828AB /* SettingsViewController.storyboard */; };
+		72CEAE1A262DC477005828AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CEAE19262DC477005828AB /* SettingsViewController.swift */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */; };
+		72E78AAA26305A6B00AA9DD9 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +46,16 @@
 		721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		725753202621AD9D0051EAAD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow+CornerRadius.swift"; sourceTree = "<group>"; };
+		726EF94A2631A3B200D5662A /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
+		7293BDE8262EE268004062DE /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		7293BDEB262EE332004062DE /* GameLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
+		7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlertController.swift"; sourceTree = "<group>"; };
 		72958966261E56C1008AD214 /* Recursive-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive-Regular.ttf"; sourceTree = "<group>"; };
 		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
+		72CEAE16262DC452005828AB /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		72CEAE19262DC477005828AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInit.swift"; sourceTree = "<group>"; };
+		72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72092B162631C686008D2BDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7293BDE8262EE268004062DE /* UserSettings.swift */,
+				72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */,
+				7293BDEB262EE332004062DE /* GameLevel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		721EF52A2619FE2E00DA8B30 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +104,8 @@
 				7257532D2621FA6D0051EAAD /* Extensions */,
 				7257532E2621FA830051EAAD /* Views */,
 				725753362621FCA70051EAAD /* Storyboards */,
+				72092B162631C686008D2BDD /* Model */,
+				726EF94A2631A3B200D5662A /* SelectButton.swift */,
 			);
 			path = "Spaceship vs meteorites";
 			sourceTree = "<group>";
@@ -101,6 +127,7 @@
 				725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */,
 				725753202621AD9D0051EAAD /* UIColor+Hex.swift */,
 				72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */,
+				7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -109,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */,
+				72CEAE19262DC477005828AB /* SettingsViewController.swift */,
 				721EF53A2619FE2E00DA8B30 /* MainGameViewController.swift */,
 				721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */,
 			);
@@ -119,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */,
+				72CEAE16262DC452005828AB /* SettingsViewController.storyboard */,
 				721EF53C2619FE2E00DA8B30 /* MainGameViewController.storyboard */,
 				721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */,
 				721EF5412619FE3000DA8B30 /* LaunchScreen.storyboard */,
@@ -184,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */,
 				72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */,
 				721EF5432619FE3000DA8B30 /* LaunchScreen.storyboard in Resources */,
 				72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */,
@@ -222,14 +252,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7293BDE9262EE268004062DE /* UserSettings.swift in Sources */,
 				725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */,
 				725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */,
 				721EF53B2619FE2E00DA8B30 /* MainGameViewController.swift in Sources */,
 				721EF5372619FE2E00DA8B30 /* AppDelegate.swift in Sources */,
+				726EF94B2631A3B200D5662A /* SelectButton.swift in Sources */,
+				72E78AAA26305A6B00AA9DD9 /* PlayerModel.swift in Sources */,
 				721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */,
 				721EF5392619FE2E00DA8B30 /* SceneDelegate.swift in Sources */,
 				72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */,
 				721EF5542619FE6E00DA8B30 /* StartGameViewController.swift in Sources */,
+				7293BDEF262F10BE004062DE /* UIViewController+UIAlertController.swift in Sources */,
+				72CEAE1A262DC477005828AB /* SettingsViewController.swift in Sources */,
+				7293BDEC262EE332004062DE /* GameLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
