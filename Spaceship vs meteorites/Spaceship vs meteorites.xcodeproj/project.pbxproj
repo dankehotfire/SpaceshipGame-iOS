@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72092B212631D12E008D2BDD /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72092B202631D12E008D2BDD /* Manager.swift */; };
 		721EF5372619FE2E00DA8B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5362619FE2E00DA8B30 /* AppDelegate.swift */; };
 		721EF5392619FE2E00DA8B30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */; };
 		721EF53B2619FE2E00DA8B30 /* MainGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF53A2619FE2E00DA8B30 /* MainGameViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72092B202631D12E008D2BDD /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		721EF5332619FE2E00DA8B30 /* Spaceship vs meteorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spaceship vs meteorites.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721EF5362619FE2E00DA8B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				7293BDE8262EE268004062DE /* UserSettings.swift */,
 				72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */,
 				7293BDEB262EE332004062DE /* GameLevel.swift */,
+				72092B202631D12E008D2BDD /* Manager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72092B212631D12E008D2BDD /* Manager.swift in Sources */,
 				7293BDE9262EE268004062DE /* UserSettings.swift in Sources */,
 				725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */,
 				725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */,
