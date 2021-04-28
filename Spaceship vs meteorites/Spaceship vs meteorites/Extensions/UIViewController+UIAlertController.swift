@@ -9,18 +9,18 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-    func showAllert(allertTitle: String, allertMessage: String, defaultButtonTitle: String) {
-        let allertController = UIAlertController(title: allertTitle, message: allertMessage, preferredStyle: .alert)
+    func showAlert(alertTitle: String, alertMessage: String, defaultButtonTitle: String) {
+        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
 
-        allertController.addAction(UIAlertAction(title: defaultButtonTitle, style: .default))
-        present(allertController, animated: true, completion: nil)
+        alertController.addAction(UIAlertAction(title: defaultButtonTitle, style: .default))
+        present(alertController, animated: true, completion: nil)
     }
 
-    func showAllertWithTwoButton(allertTitle: String, allertMessage: String, defaultButtonTitle: String, destructiveButtonTitle: String) {
-        let allertController = UIAlertController(title: allertTitle, message: allertMessage, preferredStyle: .alert)
+    func showAllertWithTwoButton(alertTitle: String, alertMessage: String, defaultButtonTitle: String, destructiveButtonTitle: String) {
+        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
 
-        allertController.addAction(UIAlertAction(title: defaultButtonTitle, style: .default))
-        allertController.addAction(UIAlertAction(title: destructiveButtonTitle, style: .destructive))
-        present(allertController, animated: true, completion: nil)
+        alertController.addAction(UIAlertAction(title: defaultButtonTitle, style: .default))
+        alertController.addAction(UIAlertAction(title: destructiveButtonTitle, style: .destructive))
+        present(alertController, animated: true, completion: nil)
     }
 }

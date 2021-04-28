@@ -73,10 +73,11 @@ class SettingsViewController: UIViewController {
 
     @IBAction private func applyChangesButtonPressed(_ sender: UIButton) {
         guard let selectedShip = selectedShip, let selectedGameLevel = selectedGameLevel, let nickname = nicknameTextField.text else {
-            return showAllert(allertTitle: "Error", allertMessage: "You have to select all fields", defaultButtonTitle: "Cancel")
+            return showAlert(alertTitle: "Error", alertMessage: "You have to select all fields", defaultButtonTitle: "Cancel")
         }
 
         let nicknameTrimmingText = nickname.trimmingCharacters(in: .whitespaces)
+
         UserSettings.shared.savePlayer(nickname: nicknameTrimmingText, spaseShip: selectedShip, gameLevel: selectedGameLevel)
     }
     @IBAction private func backToMenuButtonPressed(_ sender: UIButton) {

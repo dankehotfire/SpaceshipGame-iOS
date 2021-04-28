@@ -9,7 +9,7 @@ import Foundation
 
 class UserSettings {
     static let shared = UserSettings()
-    let defaults = UserDefaults.standard
+    private let defaults = UserDefaults.standard
 
     var currentPlayer: PlayerModel? {
         get {
