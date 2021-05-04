@@ -103,12 +103,9 @@
 			children = (
 				721EF5362619FE2E00DA8B30 /* AppDelegate.swift */,
 				721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */,
-				7257532D2621FA6D0051EAAD /* Extensions */,
+				72D44DCF26416A8A00AC7346 /* Screens */,
 				7257532C2621FA5A0051EAAD /* Resources */,
-				72D44DC22641604700AC7346 /* Start View */,
-				72D44DC32641605000AC7346 /* Settings View */,
-				72D44DC42641605800AC7346 /* Main View */,
-				72D44DC52641606700AC7346 /* EndGame View */,
+				7257532D2621FA6D0051EAAD /* Extensions */,
 				725753362621FCA70051EAAD /* LaunchScreen */,
 				72092B162631C686008D2BDD /* Model */,
 				72D44DBD26415A7100AC7346 /* Custom Views */,
@@ -154,40 +151,59 @@
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
-		72D44DC22641604700AC7346 /* Start View */ = {
+		72D44DC22641604700AC7346 /* Start Screen */ = {
 			isa = PBXGroup;
 			children = (
 				721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */,
 				721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */,
 			);
-			path = "Start View";
+			path = "Start Screen";
 			sourceTree = "<group>";
 		};
-		72D44DC32641605000AC7346 /* Settings View */ = {
+		72D44DC32641605000AC7346 /* Settings Screen */ = {
 			isa = PBXGroup;
 			children = (
 				72CEAE19262DC477005828AB /* SettingsViewController.swift */,
 				72CEAE16262DC452005828AB /* SettingsViewController.storyboard */,
 			);
-			path = "Settings View";
+			path = "Settings Screen";
 			sourceTree = "<group>";
 		};
-		72D44DC42641605800AC7346 /* Main View */ = {
+		72D44DC42641605800AC7346 /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
 				721EF53C2619FE2E00DA8B30 /* MainGameViewController.storyboard */,
 				721EF53A2619FE2E00DA8B30 /* MainGameViewController.swift */,
 			);
-			path = "Main View";
+			path = "Main Screen";
 			sourceTree = "<group>";
 		};
-		72D44DC52641606700AC7346 /* EndGame View */ = {
+		72D44DC52641606700AC7346 /* EndGame Screen */ = {
 			isa = PBXGroup;
 			children = (
 				721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */,
 				721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */,
 			);
-			path = "EndGame View";
+			path = "EndGame Screen";
+			sourceTree = "<group>";
+		};
+		72D44DC92641682700AC7346 /* Rating Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Rating Screen";
+			sourceTree = "<group>";
+		};
+		72D44DCF26416A8A00AC7346 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				72D44DC22641604700AC7346 /* Start Screen */,
+				72D44DC32641605000AC7346 /* Settings Screen */,
+				72D44DC42641605800AC7346 /* Main Screen */,
+				72D44DC52641606700AC7346 /* EndGame Screen */,
+				72D44DC92641682700AC7346 /* Rating Screen */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
