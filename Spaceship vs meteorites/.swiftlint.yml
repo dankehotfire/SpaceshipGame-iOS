@@ -17,19 +17,12 @@ disabled_rules: # rule identifiers turned on by default to exclude from running
     - prohibited_interface_builder
     - required_deinit
     - strong_iboutlet
-<<<<<<< HEAD
-=======
-        - multiline_arguments
->>>>>>> main
     - vertical_whitespace_between_cases
     - discouraged_optional_collection
     - no_grouping_extension
     - private_outlet
     - implicitly_unwrapped_optional
-<<<<<<< HEAD
     - multiline_arguments
-=======
->>>>>>> main
     - multiple_closures_with_trailing_closure #default
 
 opt_in_rules: # some rules are turned off by default, so you need to opt-in
