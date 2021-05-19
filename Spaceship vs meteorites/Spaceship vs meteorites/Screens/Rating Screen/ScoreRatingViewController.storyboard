@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I5g-if-SWi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Recursive_Casual-Bold.ttf">
+            <string>RecursiveCasual-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Score Rating View Controller-->
+        <scene sceneID="sWI-f4-fdk">
+            <objects>
+                <viewController id="I5g-if-SWi" customClass="ScoreRatingViewController" customModule="Spaceship_vs_meteorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cqq-1W-Lbo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main_background-1" translatesAutoresizingMaskIntoConstraints="NO" id="n1B-Ib-auP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mOZ-Ok-WRf">
+                                <rect key="frame" x="0.0" y="180" width="414" height="716"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Scores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vP-G0-L7s">
+                                <rect key="frame" x="120" y="64" width="174" height="36"/>
+                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="qbR-6z-DGP">
+                                <rect key="frame" x="10" y="149.5" width="394" height="25.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-um-a4y">
+                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHQ-Zp-urZ">
+                                        <rect key="frame" x="164.5" y="0.0" width="65" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZG-ey-5Yp">
+                                        <rect key="frame" x="329.5" y="0.0" width="64.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gds-M4-oYU"/>
+                        <constraints>
+                            <constraint firstItem="qbR-6z-DGP" firstAttribute="leading" secondItem="gds-M4-oYU" secondAttribute="leading" constant="10" id="5h1-Ww-5HT"/>
+                            <constraint firstItem="4vP-G0-L7s" firstAttribute="leading" secondItem="gds-M4-oYU" secondAttribute="leading" constant="120" id="ERH-I7-9GS"/>
+                            <constraint firstItem="4vP-G0-L7s" firstAttribute="centerX" secondItem="Cqq-1W-Lbo" secondAttribute="centerX" id="Ewi-4f-yed"/>
+                            <constraint firstItem="mOZ-Ok-WRf" firstAttribute="top" secondItem="qbR-6z-DGP" secondAttribute="bottom" constant="5" id="Hgl-IR-Yp2"/>
+                            <constraint firstItem="gds-M4-oYU" firstAttribute="trailing" secondItem="4vP-G0-L7s" secondAttribute="trailing" constant="120" id="PqZ-QC-IwL"/>
+                            <constraint firstItem="mOZ-Ok-WRf" firstAttribute="top" secondItem="Cqq-1W-Lbo" secondAttribute="top" constant="180" id="azQ-9Z-E8E"/>
+                            <constraint firstItem="mOZ-Ok-WRf" firstAttribute="trailing" secondItem="gds-M4-oYU" secondAttribute="trailing" id="cvU-oL-axB"/>
+                            <constraint firstItem="mOZ-Ok-WRf" firstAttribute="centerX" secondItem="Cqq-1W-Lbo" secondAttribute="centerX" id="m1k-U8-3oj"/>
+                            <constraint firstAttribute="bottom" secondItem="mOZ-Ok-WRf" secondAttribute="bottom" id="pXj-Nf-c2D"/>
+                            <constraint firstAttribute="trailing" secondItem="qbR-6z-DGP" secondAttribute="trailing" constant="10" id="ufk-pC-meW"/>
+                            <constraint firstItem="4vP-G0-L7s" firstAttribute="top" secondItem="gds-M4-oYU" secondAttribute="top" constant="20" id="ymb-qr-8aM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mOZ-Ok-WRf" id="NQC-Oq-c2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfH-1r-Xvp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main_background-1" width="1587" height="2245"/>
+    </resources>
+</document>
