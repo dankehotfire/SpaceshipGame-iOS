@@ -21,6 +21,8 @@
 		725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753202621AD9D0051EAAD /* UIColor+Hex.swift */; };
 		725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */; };
 		726EF94B2631A3B200D5662A /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726EF94A2631A3B200D5662A /* SelectButton.swift */; };
+		727A24632651325A00B95F14 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727A24612651325A00B95F14 /* ResultTableViewCell.swift */; };
+		727A24642651325A00B95F14 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727A24622651325A00B95F14 /* ResultTableViewCell.xib */; };
 		7293BDE9262EE268004062DE /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDE8262EE268004062DE /* UserSettings.swift */; };
 		7293BDEC262EE332004062DE /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDEB262EE332004062DE /* GameLevel.swift */; };
 		7293BDEF262F10BE004062DE /* UIViewController+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */; };
@@ -28,8 +30,12 @@
 		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
 		72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CEAE16262DC452005828AB /* SettingsViewController.storyboard */; };
 		72CEAE1A262DC477005828AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CEAE19262DC477005828AB /* SettingsViewController.swift */; };
+		72D44DD426416BBD00AC7346 /* ScoreRatingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D44DD326416BBD00AC7346 /* ScoreRatingViewController.storyboard */; };
+		72D44DD726416BE700AC7346 /* ScoreRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */; };
 		72E78AAA26305A6B00AA9DD9 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */; };
+		72FA300B2648258000F6464B /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA300A2648258000F6464B /* ResultModel.swift */; };
+		72FA300E2648434600F6464B /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA300D2648434600F6464B /* FileManager+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +55,8 @@
 		725753202621AD9D0051EAAD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		725753232621B0650051EAAD /* UIView+Shadow+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow+CornerRadius.swift"; sourceTree = "<group>"; };
 		726EF94A2631A3B200D5662A /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
+		727A24612651325A00B95F14 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		727A24622651325A00B95F14 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		7293BDE8262EE268004062DE /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		7293BDEB262EE332004062DE /* GameLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
 		7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlertController.swift"; sourceTree = "<group>"; };
@@ -56,8 +64,12 @@
 		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
 		72CEAE16262DC452005828AB /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		72CEAE19262DC477005828AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		72D44DD326416BBD00AC7346 /* ScoreRatingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoreRatingViewController.storyboard; sourceTree = "<group>"; };
+		72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRatingViewController.swift; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInit.swift"; sourceTree = "<group>"; };
 		72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		72FA300A2648258000F6464B /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		72FA300D2648434600F6464B /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 				72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */,
 				7293BDEB262EE332004062DE /* GameLevel.swift */,
 				72092B202631D12E008D2BDD /* Manager.swift */,
+				72FA300A2648258000F6464B /* ResultModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,8 +114,7 @@
 		721EF5352619FE2E00DA8B30 /* Spaceship vs meteorites */ = {
 			isa = PBXGroup;
 			children = (
-				721EF5362619FE2E00DA8B30 /* AppDelegate.swift */,
-				721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */,
+				72220ABC266251CB00EFCC85 /* Supporting files */,
 				72D44DCF26416A8A00AC7346 /* Screens */,
 				7257532C2621FA5A0051EAAD /* Resources */,
 				7257532D2621FA6D0051EAAD /* Extensions */,
@@ -111,6 +123,15 @@
 				72D44DBD26415A7100AC7346 /* Custom Views */,
 			);
 			path = "Spaceship vs meteorites";
+			sourceTree = "<group>";
+		};
+		72220ABC266251CB00EFCC85 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				721EF5362619FE2E00DA8B30 /* AppDelegate.swift */,
+				721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		7257532C2621FA5A0051EAAD /* Resources */ = {
@@ -131,6 +152,7 @@
 				725753202621AD9D0051EAAD /* UIColor+Hex.swift */,
 				72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */,
 				7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */,
+				72FA300D2648434600F6464B /* FileManager+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +212,10 @@
 		72D44DC92641682700AC7346 /* Rating Screen */ = {
 			isa = PBXGroup;
 			children = (
+				72D44DD326416BBD00AC7346 /* ScoreRatingViewController.storyboard */,
+				72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */,
+				727A24612651325A00B95F14 /* ResultTableViewCell.swift */,
+				727A24622651325A00B95F14 /* ResultTableViewCell.xib */,
 			);
 			path = "Rating Screen";
 			sourceTree = "<group>";
@@ -265,11 +291,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */,
+				727A24642651325A00B95F14 /* ResultTableViewCell.xib in Resources */,
 				72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */,
 				721EF5432619FE3000DA8B30 /* LaunchScreen.storyboard in Resources */,
 				72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */,
 				721EF5402619FE3000DA8B30 /* Assets.xcassets in Resources */,
 				721EF54F2619FE4A00DA8B30 /* EndGameViewController.storyboard in Resources */,
+				72D44DD426416BBD00AC7346 /* ScoreRatingViewController.storyboard in Resources */,
 				721EF53E2619FE2E00DA8B30 /* MainGameViewController.storyboard in Resources */,
 				721EF54C2619FE4100DA8B30 /* StartGameViewController.storyboard in Resources */,
 			);
@@ -305,7 +333,10 @@
 			files = (
 				72092B212631D12E008D2BDD /* Manager.swift in Sources */,
 				7293BDE9262EE268004062DE /* UserSettings.swift in Sources */,
+				72FA300B2648258000F6464B /* ResultModel.swift in Sources */,
 				725753242621B0650051EAAD /* UIView+Shadow+CornerRadius.swift in Sources */,
+				72FA300E2648434600F6464B /* FileManager+Extensions.swift in Sources */,
+				727A24632651325A00B95F14 /* ResultTableViewCell.swift in Sources */,
 				725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */,
 				721EF53B2619FE2E00DA8B30 /* MainGameViewController.swift in Sources */,
 				721EF5372619FE2E00DA8B30 /* AppDelegate.swift in Sources */,
@@ -313,6 +344,7 @@
 				72E78AAA26305A6B00AA9DD9 /* PlayerModel.swift in Sources */,
 				721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */,
 				721EF5392619FE2E00DA8B30 /* SceneDelegate.swift in Sources */,
+				72D44DD726416BE700AC7346 /* ScoreRatingViewController.swift in Sources */,
 				72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */,
 				721EF5542619FE6E00DA8B30 /* StartGameViewController.swift in Sources */,
 				7293BDEF262F10BE004062DE /* UIViewController+UIAlertController.swift in Sources */,

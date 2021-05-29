@@ -26,6 +26,12 @@ class EndGameViewController: UIViewController {
         present(destinationVC, animated: true, completion: nil)
     }
 
+    @IBAction private func ratingButtonPressed(_ sender: UIButton) {
+        let destinationVC = ScoreRatingViewController.instantiate()
+        destinationVC.modalPresentationStyle = .fullScreen
+        present(destinationVC, animated: true, completion: nil)
+    }
+
     @IBAction private func menuButtonPressed(_ sender: UIButton) {
         let destinationVC = StartGameViewController.instantiate()
         destinationVC.modalPresentationStyle = .fullScreen
@@ -34,8 +40,15 @@ class EndGameViewController: UIViewController {
 
     private func saveResult() {
         guard let nickname = UserSettings.shared.currentPlayer?.nickname else {
+            assertionFailure("nickname is nil")
             return
         }
-        Manager.someFunc(result: "\(nickname): \(score)")
+
+        guard let ship = UserSettings.shared.currentPlayer?.spaceShip else {
+            assertionFailure("ship is nil")
+            return
+        }
+
+        Manager.saveScore(nickname: nickname, ship: ship, score: score)
     }
 }

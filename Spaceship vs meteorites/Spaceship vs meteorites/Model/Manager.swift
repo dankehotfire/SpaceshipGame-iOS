@@ -8,13 +8,30 @@
 import Foundation
 
 enum Manager {
-    static func someFunc(result: String) {
-        let currentDate = Date()
-        let file = "\(currentDate).txt"
-        if let documentsDirectoryPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-            let filePath = documentsDirectoryPath.appendingPathComponent(file)
-            print(filePath)
-            try? result.write(to: filePath, atomically: false, encoding: .utf8)
-        }
+    static func dateCreater() -> String {
+        let date = Date()
+        let formatter = DateFormatter()
+
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+
+        let stringDate = formatter.string(from: date)
+
+        return stringDate
+    }
+
+    static func saveScore(nickname: String, ship: String, score: String) {
+        let date = dateCreater()
+        let file = "\(date).json"
+        let documentsDirectoryPath = FileManager.getDocumentsDir()
+        var folderPath = documentsDirectoryPath
+        folderPath.appendPathComponent("Results")
+
+        let result = ResultModel(nickname: nickname, ship: ship, score: score)
+        let data = try? JSONEncoder().encode(result)
+        let dataPath = folderPath.appendingPathComponent(file)
+
+        try? FileManager.default.createDirectory(at: folderPath, withIntermediateDirectories: false, attributes: nil)
+
+        FileManager.default.createFile(atPath: dataPath.path, contents: data, attributes: nil)
     }
 }

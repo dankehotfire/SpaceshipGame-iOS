@@ -24,6 +24,8 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nicknameTextField.returnKeyType = .done
+        nicknameTextField.delegate = self
         startSettings()
     }
 
@@ -102,5 +104,12 @@ class SettingsViewController: UIViewController {
         easyLevelButton.selectedImage = image
         mediumLevelButton.selectedImage = image
         hardLevelButton.selectedImage = image
+    }
+}
+
+extension SettingsViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
