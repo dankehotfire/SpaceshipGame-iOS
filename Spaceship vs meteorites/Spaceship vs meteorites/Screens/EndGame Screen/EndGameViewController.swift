@@ -40,10 +40,12 @@ class EndGameViewController: UIViewController {
 
     private func saveResult() {
         guard let nickname = UserSettings.shared.currentPlayer?.nickname else {
+            assertionFailure("nickname is nil")
             return
         }
 
         guard let ship = UserSettings.shared.currentPlayer?.spaceShip else {
+            assertionFailure("ship is nil")
             return
         }
 

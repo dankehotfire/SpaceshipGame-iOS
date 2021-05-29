@@ -34,7 +34,6 @@
 		72D44DD726416BE700AC7346 /* ScoreRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */; };
 		72E78AAA26305A6B00AA9DD9 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */; };
-		72FA3008264824A200F6464B /* Date+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA3007264824A200F6464B /* Date+DateFormatter.swift */; };
 		72FA300B2648258000F6464B /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA300A2648258000F6464B /* ResultModel.swift */; };
 		72FA300E2648434600F6464B /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA300D2648434600F6464B /* FileManager+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRatingViewController.swift; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInit.swift"; sourceTree = "<group>"; };
 		72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
-		72FA3007264824A200F6464B /* Date+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DateFormatter.swift"; sourceTree = "<group>"; };
 		72FA300A2648258000F6464B /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		72FA300D2648434600F6464B /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,8 +114,7 @@
 		721EF5352619FE2E00DA8B30 /* Spaceship vs meteorites */ = {
 			isa = PBXGroup;
 			children = (
-				721EF5362619FE2E00DA8B30 /* AppDelegate.swift */,
-				721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */,
+				72220ABC266251CB00EFCC85 /* Supporting files */,
 				72D44DCF26416A8A00AC7346 /* Screens */,
 				7257532C2621FA5A0051EAAD /* Resources */,
 				7257532D2621FA6D0051EAAD /* Extensions */,
@@ -126,6 +123,15 @@
 				72D44DBD26415A7100AC7346 /* Custom Views */,
 			);
 			path = "Spaceship vs meteorites";
+			sourceTree = "<group>";
+		};
+		72220ABC266251CB00EFCC85 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				721EF5362619FE2E00DA8B30 /* AppDelegate.swift */,
+				721EF5382619FE2E00DA8B30 /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		7257532C2621FA5A0051EAAD /* Resources */ = {
@@ -146,7 +152,6 @@
 				725753202621AD9D0051EAAD /* UIColor+Hex.swift */,
 				72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */,
 				7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */,
-				72FA3007264824A200F6464B /* Date+DateFormatter.swift */,
 				72FA300D2648434600F6464B /* FileManager+Extensions.swift */,
 			);
 			path = Extensions;
@@ -335,7 +340,6 @@
 				725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */,
 				721EF53B2619FE2E00DA8B30 /* MainGameViewController.swift in Sources */,
 				721EF5372619FE2E00DA8B30 /* AppDelegate.swift in Sources */,
-				72FA3008264824A200F6464B /* Date+DateFormatter.swift in Sources */,
 				726EF94B2631A3B200D5662A /* SelectButton.swift in Sources */,
 				72E78AAA26305A6B00AA9DD9 /* PlayerModel.swift in Sources */,
 				721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */,

@@ -23,15 +23,18 @@ class ScoreRatingViewController: UIViewController {
 
     func loadResults() {
         guard let folderPath = FileManager.createOrFindDirectory(named: "Results") else {
+            assertionFailure()
             return
         }
 
         guard let urls = try? FileManager.default.contentsOfDirectory(at: folderPath, includingPropertiesForKeys: nil, options: .includesDirectoriesPostOrder) else {
+            assertionFailure()
             return
         }
 
         for url in urls {
             guard let data = try? Data(contentsOf: url)  else {
+                assertionFailure()
                 return
             }
 
@@ -44,11 +47,7 @@ class ScoreRatingViewController: UIViewController {
 
 extension ScoreRatingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if resultModel.count < 10 {
-            return resultModel.count
-        } else {
-            return 10
-        }
+        resultModel.count < 10 ? resultModel.count : 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,7 +56,6 @@ extension ScoreRatingViewController: UITableViewDelegate, UITableViewDataSource 
         }
 
         let sortedResult = resultModel.sorted { Int($0.score) ?? 0 > Int($1.score) ?? 0 }
-        print(sortedResult)
 
         cell.shipImage.image = UIImage(named: sortedResult[indexPath.row].ship)
         cell.nameLabel.text = sortedResult[indexPath.row].nickname

@@ -9,10 +9,14 @@ import Foundation
 
 enum Manager {
     static func dateCreater() -> String {
-        let currentDate = Date()
-        let formate = currentDate.getFormattedDate(format: "yyyy-MM-dd HH:mm:ss")
+        let date = Date()
+        let formatter = DateFormatter()
 
-        return formate
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+
+        let stringDate = formatter.string(from: date)
+
+        return stringDate
     }
 
     static func saveScore(nickname: String, ship: String, score: String) {

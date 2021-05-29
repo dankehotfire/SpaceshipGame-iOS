@@ -66,9 +66,11 @@ class MainGameViewController: UIViewController {
             batteryImage.frame.origin.x = CGFloat(random)
 
             guard let textScore = scoreLabel.text else {
+                assertionFailure()
                 return
             }
             guard var score = Int(textScore) else {
+                assertionFailure()
                 return
             }
             progressView.progress += 0.1
