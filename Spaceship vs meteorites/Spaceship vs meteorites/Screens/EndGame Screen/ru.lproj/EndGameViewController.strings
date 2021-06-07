@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Rating"; ObjectID = "6pU-5h-eQ9"; */
+"6pU-5h-eQ9.normalTitle" = "Рейтинг";
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "ATp-cs-HZt"; */
+"ATp-cs-HZt.normalTitle" = "Меню";
+
+/* Class = "UILabel"; text = "GAME OVER"; ObjectID = "MkS-VZ-7qH"; */
+"MkS-VZ-7qH.text" = "ИГРА ОКОНЧЕНА";
+
+/* Class = "UILabel"; text = "Your score:"; ObjectID = "n7a-es-iEr"; */
+"n7a-es-iEr.text" = "Ваш результат:";
+
+/* Class = "UIButton"; normalTitle = "Restart"; ObjectID = "uXX-Yv-5Tf"; */
+"uXX-Yv-5Tf.normalTitle" = "Начать заново";

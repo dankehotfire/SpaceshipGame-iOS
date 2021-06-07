@@ -26,6 +26,8 @@
 	<array>
 		<string>Recursive-Regular.ttf</string>
 		<string>Recursive_Casual-Bold.ttf</string>
+		<string>YanoneKaffeesatz-Light.ttf</string>
+		<string>YanoneKaffeesatz-Medium.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

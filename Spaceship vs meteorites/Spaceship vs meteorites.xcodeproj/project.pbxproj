@@ -14,8 +14,6 @@
 		721EF53E2619FE2E00DA8B30 /* MainGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF53C2619FE2E00DA8B30 /* MainGameViewController.storyboard */; };
 		721EF5402619FE3000DA8B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721EF53F2619FE3000DA8B30 /* Assets.xcassets */; };
 		721EF5432619FE3000DA8B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF5412619FE3000DA8B30 /* LaunchScreen.storyboard */; };
-		721EF54C2619FE4100DA8B30 /* StartGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */; };
-		721EF54F2619FE4A00DA8B30 /* EndGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */; };
 		721EF5542619FE6E00DA8B30 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */; };
 		721EF5572619FE7A00DA8B30 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */; };
 		725753212621AD9D0051EAAD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725753202621AD9D0051EAAD /* UIColor+Hex.swift */; };
@@ -28,9 +26,13 @@
 		7293BDEF262F10BE004062DE /* UIViewController+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */; };
 		72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958966261E56C1008AD214 /* Recursive-Regular.ttf */; };
 		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
-		72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CEAE16262DC452005828AB /* SettingsViewController.storyboard */; };
+		72A9DAE5266E459000AE273F /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAE7266E459000AE273F /* SettingsViewController.storyboard */; };
+		72A9DAE9266E45E900AE273F /* StartGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAEB266E45E900AE273F /* StartGameViewController.storyboard */; };
+		72A9DAED266E45F200AE273F /* EndGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAEF266E45F200AE273F /* EndGameViewController.storyboard */; };
+		72A9DAF1266E45FC00AE273F /* ScoreRatingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAF3266E45FC00AE273F /* ScoreRatingViewController.storyboard */; };
+		72A9DB00266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAFE266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf */; };
+		72A9DB01266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAFF266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf */; };
 		72CEAE1A262DC477005828AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CEAE19262DC477005828AB /* SettingsViewController.swift */; };
-		72D44DD426416BBD00AC7346 /* ScoreRatingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D44DD326416BBD00AC7346 /* ScoreRatingViewController.storyboard */; };
 		72D44DD726416BE700AC7346 /* ScoreRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */; };
 		72E78AAA26305A6B00AA9DD9 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */; };
@@ -48,8 +50,6 @@
 		721EF53F2619FE3000DA8B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		721EF5422619FE3000DA8B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		721EF5442619FE3000DA8B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartGameViewController.storyboard; sourceTree = "<group>"; };
-		721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndGameViewController.storyboard; sourceTree = "<group>"; };
 		721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		725753202621AD9D0051EAAD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -62,9 +62,18 @@
 		7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlertController.swift"; sourceTree = "<group>"; };
 		72958966261E56C1008AD214 /* Recursive-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive-Regular.ttf"; sourceTree = "<group>"; };
 		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
-		72CEAE16262DC452005828AB /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		72A9DAE6266E459000AE273F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingsViewController.storyboard; sourceTree = "<group>"; };
+		72A9DAEA266E45E900AE273F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartGameViewController.storyboard; sourceTree = "<group>"; };
+		72A9DAEE266E45F200AE273F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EndGameViewController.storyboard; sourceTree = "<group>"; };
+		72A9DAF2266E45FC00AE273F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ScoreRatingViewController.storyboard; sourceTree = "<group>"; };
+		72A9DAF5266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/StartGameViewController.strings; sourceTree = "<group>"; };
+		72A9DAF6266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SettingsViewController.strings; sourceTree = "<group>"; };
+		72A9DAF8266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/EndGameViewController.strings; sourceTree = "<group>"; };
+		72A9DAF9266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ScoreRatingViewController.strings; sourceTree = "<group>"; };
+		72A9DAFA266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		72A9DAFE266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YanoneKaffeesatz-Light.ttf"; path = "../../../../../../../Downloads/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Light.ttf"; sourceTree = "<group>"; };
+		72A9DAFF266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YanoneKaffeesatz-Medium.ttf"; path = "../../../../../../../Downloads/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf"; sourceTree = "<group>"; };
 		72CEAE19262DC477005828AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		72D44DD326416BBD00AC7346 /* ScoreRatingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoreRatingViewController.storyboard; sourceTree = "<group>"; };
 		72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRatingViewController.swift; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInit.swift"; sourceTree = "<group>"; };
 		72E78AA926305A6B00AA9DD9 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
@@ -139,8 +148,7 @@
 			children = (
 				721EF53F2619FE3000DA8B30 /* Assets.xcassets */,
 				721EF5442619FE3000DA8B30 /* Info.plist */,
-				72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */,
-				72958966261E56C1008AD214 /* Recursive-Regular.ttf */,
+				72A9DAFD266E56D400AE273F /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,6 +173,17 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		72A9DAFD266E56D400AE273F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				72A9DAFE266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf */,
+				72A9DAFF266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf */,
+				72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */,
+				72958966261E56C1008AD214 /* Recursive-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		72D44DBD26415A7100AC7346 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +195,7 @@
 		72D44DC22641604700AC7346 /* Start Screen */ = {
 			isa = PBXGroup;
 			children = (
-				721EF54B2619FE4100DA8B30 /* StartGameViewController.storyboard */,
+				72A9DAEB266E45E900AE273F /* StartGameViewController.storyboard */,
 				721EF5532619FE6E00DA8B30 /* StartGameViewController.swift */,
 			);
 			path = "Start Screen";
@@ -186,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				72CEAE19262DC477005828AB /* SettingsViewController.swift */,
-				72CEAE16262DC452005828AB /* SettingsViewController.storyboard */,
+				72A9DAE7266E459000AE273F /* SettingsViewController.storyboard */,
 			);
 			path = "Settings Screen";
 			sourceTree = "<group>";
@@ -204,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				721EF5562619FE7A00DA8B30 /* EndGameViewController.swift */,
-				721EF54E2619FE4A00DA8B30 /* EndGameViewController.storyboard */,
+				72A9DAEF266E45F200AE273F /* EndGameViewController.storyboard */,
 			);
 			path = "EndGame Screen";
 			sourceTree = "<group>";
@@ -212,7 +231,7 @@
 		72D44DC92641682700AC7346 /* Rating Screen */ = {
 			isa = PBXGroup;
 			children = (
-				72D44DD326416BBD00AC7346 /* ScoreRatingViewController.storyboard */,
+				72A9DAF3266E45FC00AE273F /* ScoreRatingViewController.storyboard */,
 				72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */,
 				727A24612651325A00B95F14 /* ResultTableViewCell.swift */,
 				727A24622651325A00B95F14 /* ResultTableViewCell.xib */,
@@ -274,6 +293,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 721EF52A2619FE2E00DA8B30;
 			productRefGroup = 721EF5342619FE2E00DA8B30 /* Products */;
@@ -290,16 +310,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CEAE17262DC452005828AB /* SettingsViewController.storyboard in Resources */,
+				72A9DAE5266E459000AE273F /* SettingsViewController.storyboard in Resources */,
 				727A24642651325A00B95F14 /* ResultTableViewCell.xib in Resources */,
+				72A9DB00266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf in Resources */,
+				72A9DB01266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf in Resources */,
 				72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */,
 				721EF5432619FE3000DA8B30 /* LaunchScreen.storyboard in Resources */,
 				72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */,
 				721EF5402619FE3000DA8B30 /* Assets.xcassets in Resources */,
-				721EF54F2619FE4A00DA8B30 /* EndGameViewController.storyboard in Resources */,
-				72D44DD426416BBD00AC7346 /* ScoreRatingViewController.storyboard in Resources */,
+				72A9DAED266E45F200AE273F /* EndGameViewController.storyboard in Resources */,
+				72A9DAF1266E45FC00AE273F /* ScoreRatingViewController.storyboard in Resources */,
 				721EF53E2619FE2E00DA8B30 /* MainGameViewController.storyboard in Resources */,
-				721EF54C2619FE4100DA8B30 /* StartGameViewController.storyboard in Resources */,
+				72A9DAE9266E45E900AE273F /* StartGameViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +390,45 @@
 			isa = PBXVariantGroup;
 			children = (
 				721EF5422619FE3000DA8B30 /* Base */,
+				72A9DAFA266E461500AE273F /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		72A9DAE7266E459000AE273F /* SettingsViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A9DAE6266E459000AE273F /* Base */,
+				72A9DAF6266E461500AE273F /* ru */,
+			);
+			name = SettingsViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		72A9DAEB266E45E900AE273F /* StartGameViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A9DAEA266E45E900AE273F /* Base */,
+				72A9DAF5266E461500AE273F /* ru */,
+			);
+			name = StartGameViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		72A9DAEF266E45F200AE273F /* EndGameViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A9DAEE266E45F200AE273F /* Base */,
+				72A9DAF8266E461500AE273F /* ru */,
+			);
+			name = EndGameViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		72A9DAF3266E45FC00AE273F /* ScoreRatingViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A9DAF2266E45FC00AE273F /* Base */,
+				72A9DAF9266E461500AE273F /* ru */,
+			);
+			name = ScoreRatingViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -379,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -440,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

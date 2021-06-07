@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "not selected"; ObjectID = "DEr-mV-FM2"; */
+"DEr-mV-FM2.text" = "Не выбран";
+
+/* Class = "UILabel"; text = "Please, go to settings and select your game profile"; ObjectID = "coi-Un-X5a"; */
+"coi-Un-X5a.text" = "Пожалуйста, пройдите в настройки и выберите свой игровой профиль";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "elM-ci-u25"; */
+"elM-ci-u25.normalTitle" = "Настройки";
+
+/* Class = "UILabel"; text = "Current player:"; ObjectID = "m2d-D8-53A"; */
+"m2d-D8-53A.text" = "Текущий игрок";

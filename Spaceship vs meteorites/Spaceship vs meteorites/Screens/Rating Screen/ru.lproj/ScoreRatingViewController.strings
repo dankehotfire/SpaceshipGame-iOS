@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "High Scores"; ObjectID = "4vP-G0-L7s"; */
+"4vP-G0-L7s.text" = "Лучшие результаты";
+
+/* Class = "UILabel"; text = "Ship"; ObjectID = "cRC-um-a4y"; */
+"cRC-um-a4y.text" = "Корабль";
+
+/* Class = "UILabel"; text = "Score"; ObjectID = "pZG-ey-5Yp"; */
+"pZG-ey-5Yp.text" = "Результат";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "qHQ-Zp-urZ"; */
+"qHQ-Zp-urZ.text" = "Никнейм";

@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "2fw-Mv-hj0"; */
+"2fw-Mv-hj0.text" = "Настройки";
+
+/* Class = "UIButton"; normalTitle = "hard"; ObjectID = "CNS-HT-6in"; */
+"CNS-HT-6in.normalTitle" = "сложный";
+
+/* Class = "UIButton"; normalTitle = "medium"; ObjectID = "wBi-Rh-nhE"; */
+"wBi-Rh-nhE.normalTitle" = "средний";
+
+/* Class = "UIButton"; normalTitle = "easy"; ObjectID = "mgn-eH-IxT"; */
+"mgn-eH-IxT.normalTitle" = "легкий";
+
+/* Class = "UILabel"; text = "Nickname:"; ObjectID = "PeD-Me-DFk"; */
+"PeD-Me-DFk.text" = "Никнейм:";
+
+/* Class = "UILabel"; text = "Spaceship:"; ObjectID = "U3e-DN-oSH"; */
+"U3e-DN-oSH.text" = "Корабль:";
+
+/* Class = "UIButton"; normalTitle = "Apply changes"; ObjectID = "iR7-ks-9Df"; */
+"iR7-ks-9Df.normalTitle" = "Применить изменения";
+
+/* Class = "UIButton"; normalTitle = "Back to menu"; ObjectID = "riV-rS-UMM"; */
+"riV-rS-UMM.normalTitle" = "Вернуться в меню";
+
+/* Class = "UILabel"; text = "Game level: "; ObjectID = "xKH-Dj-F33"; */
+"xKH-Dj-F33.text" = "Уровень игры:";
