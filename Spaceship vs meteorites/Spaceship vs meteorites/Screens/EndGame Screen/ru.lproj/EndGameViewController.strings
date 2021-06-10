@@ -9,7 +9,7 @@
 "MkS-VZ-7qH.text" = "ИГРА ОКОНЧЕНА";
 
 /* Class = "UILabel"; text = "Your score:"; ObjectID = "n7a-es-iEr"; */
-"n7a-es-iEr.text" = "Ваш результат:";
+"n7a-es-iEr.text" = "Результат:";
 
 /* Class = "UIButton"; normalTitle = "Restart"; ObjectID = "uXX-Yv-5Tf"; */
 "uXX-Yv-5Tf.normalTitle" = "Начать заново";

@@ -24,14 +24,12 @@
 		7293BDE9262EE268004062DE /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDE8262EE268004062DE /* UserSettings.swift */; };
 		7293BDEC262EE332004062DE /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDEB262EE332004062DE /* GameLevel.swift */; };
 		7293BDEF262F10BE004062DE /* UIViewController+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */; };
-		72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958966261E56C1008AD214 /* Recursive-Regular.ttf */; };
-		72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */; };
 		72A9DAE5266E459000AE273F /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAE7266E459000AE273F /* SettingsViewController.storyboard */; };
 		72A9DAE9266E45E900AE273F /* StartGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAEB266E45E900AE273F /* StartGameViewController.storyboard */; };
 		72A9DAED266E45F200AE273F /* EndGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAEF266E45F200AE273F /* EndGameViewController.storyboard */; };
 		72A9DAF1266E45FC00AE273F /* ScoreRatingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAF3266E45FC00AE273F /* ScoreRatingViewController.storyboard */; };
-		72A9DB00266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAFE266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf */; };
-		72A9DB01266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72A9DAFF266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf */; };
+		72BC96C4267255F500993A07 /* Alegreya-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72BC96C2267255F500993A07 /* Alegreya-Regular.ttf */; };
+		72BC96C5267255F500993A07 /* Alegreya-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72BC96C3267255F500993A07 /* Alegreya-Medium.ttf */; };
 		72CEAE1A262DC477005828AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CEAE19262DC477005828AB /* SettingsViewController.swift */; };
 		72D44DD726416BE700AC7346 /* ScoreRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */; };
 		72DA0FDD261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */; };
@@ -60,8 +58,6 @@
 		7293BDE8262EE268004062DE /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		7293BDEB262EE332004062DE /* GameLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
 		7293BDEE262F10BE004062DE /* UIViewController+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlertController.swift"; sourceTree = "<group>"; };
-		72958966261E56C1008AD214 /* Recursive-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive-Regular.ttf"; sourceTree = "<group>"; };
-		72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recursive_Casual-Bold.ttf"; sourceTree = "<group>"; };
 		72A9DAE6266E459000AE273F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingsViewController.storyboard; sourceTree = "<group>"; };
 		72A9DAEA266E45E900AE273F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartGameViewController.storyboard; sourceTree = "<group>"; };
 		72A9DAEE266E45F200AE273F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EndGameViewController.storyboard; sourceTree = "<group>"; };
@@ -71,8 +67,8 @@
 		72A9DAF8266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/EndGameViewController.strings; sourceTree = "<group>"; };
 		72A9DAF9266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ScoreRatingViewController.strings; sourceTree = "<group>"; };
 		72A9DAFA266E461500AE273F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		72A9DAFE266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YanoneKaffeesatz-Light.ttf"; path = "../../../../../../../Downloads/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Light.ttf"; sourceTree = "<group>"; };
-		72A9DAFF266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YanoneKaffeesatz-Medium.ttf"; path = "../../../../../../../Downloads/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf"; sourceTree = "<group>"; };
+		72BC96C2267255F500993A07 /* Alegreya-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Regular.ttf"; sourceTree = "<group>"; };
+		72BC96C3267255F500993A07 /* Alegreya-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Medium.ttf"; sourceTree = "<group>"; };
 		72CEAE19262DC477005828AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		72D44DD626416BE700AC7346 /* ScoreRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRatingViewController.swift; sourceTree = "<group>"; };
 		72DA0FDC261C7FDC00C0B94F /* UIViewController+StoryboardInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInit.swift"; sourceTree = "<group>"; };
@@ -176,10 +172,8 @@
 		72A9DAFD266E56D400AE273F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				72A9DAFE266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf */,
-				72A9DAFF266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf */,
-				72958967261E56C1008AD214 /* Recursive_Casual-Bold.ttf */,
-				72958966261E56C1008AD214 /* Recursive-Regular.ttf */,
+				72BC96C3267255F500993A07 /* Alegreya-Medium.ttf */,
+				72BC96C2267255F500993A07 /* Alegreya-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -312,13 +306,11 @@
 			files = (
 				72A9DAE5266E459000AE273F /* SettingsViewController.storyboard in Resources */,
 				727A24642651325A00B95F14 /* ResultTableViewCell.xib in Resources */,
-				72A9DB00266E56EC00AE273F /* YanoneKaffeesatz-Light.ttf in Resources */,
-				72A9DB01266E56EC00AE273F /* YanoneKaffeesatz-Medium.ttf in Resources */,
-				72958968261E56C1008AD214 /* Recursive-Regular.ttf in Resources */,
 				721EF5432619FE3000DA8B30 /* LaunchScreen.storyboard in Resources */,
-				72958969261E56C1008AD214 /* Recursive_Casual-Bold.ttf in Resources */,
+				72BC96C5267255F500993A07 /* Alegreya-Medium.ttf in Resources */,
 				721EF5402619FE3000DA8B30 /* Assets.xcassets in Resources */,
 				72A9DAED266E45F200AE273F /* EndGameViewController.storyboard in Resources */,
+				72BC96C4267255F500993A07 /* Alegreya-Regular.ttf in Resources */,
 				72A9DAF1266E45FC00AE273F /* ScoreRatingViewController.storyboard in Resources */,
 				721EF53E2619FE2E00DA8B30 /* MainGameViewController.storyboard in Resources */,
 				72A9DAE9266E45E900AE273F /* StartGameViewController.storyboard in Resources */,

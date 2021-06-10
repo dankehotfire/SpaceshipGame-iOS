@@ -30,18 +30,18 @@ class SettingsViewController: UIViewController {
     }
 
     @IBAction private func gameLevelButtonPressed(_ sender: SelectButton) {
-        switch sender.currentTitle {
-        case "easy":
+        switch sender.tag {
+        case 0:
             selectedGameLevel = .easy
             easyLevelButton.isSelected = true
             mediumLevelButton.isSelected = false
             hardLevelButton.isSelected = false
-        case "medium":
+        case 1:
             selectedGameLevel = .medium
             easyLevelButton.isSelected = false
             mediumLevelButton.isSelected = true
             hardLevelButton.isSelected = false
-        case "hard":
+        case 2:
             selectedGameLevel = .hard
             easyLevelButton.isSelected = false
             mediumLevelButton.isSelected = false

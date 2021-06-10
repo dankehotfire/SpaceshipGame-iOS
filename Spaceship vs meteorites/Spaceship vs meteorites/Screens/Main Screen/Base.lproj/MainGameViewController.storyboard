@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Recursive_Casual-Bold.ttf">
-            <string>RecursiveCasual-Bold</string>
+        <array key="Alegreya-Medium.ttf">
+            <string>Alegreya-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -58,11 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_red_meteorite" translatesAutoresizingMaskIntoConstraints="NO" id="Atf-hB-zer">
-                                <rect key="frame" x="94" y="55" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_brown_meteorite" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-pw-Jjo">
-                                <rect key="frame" x="269" y="55" width="50" height="50"/>
+                                <rect key="frame" x="114" y="54" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="alk-hP-G7U">
@@ -84,21 +80,25 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_UFO" translatesAutoresizingMaskIntoConstraints="NO" id="s1F-Pn-3gA">
-                                <rect key="frame" x="182" y="55" width="50" height="50"/>
+                                <rect key="frame" x="199" y="54" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="VUw-Vk-41m">
-                                <rect key="frame" x="376" y="44" width="18" height="36"/>
-                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="30"/>
+                                <rect key="frame" x="358" y="44" width="36" height="48"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_brown_meteorite" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-pw-Jjo">
+                                <rect key="frame" x="280" y="54" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ym8-Qe-a9k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JER-Pg-1cC" firstAttribute="top" secondItem="VUw-Vk-41m" secondAttribute="bottom" constant="135" id="2jN-Vc-aPw"/>
                             <constraint firstItem="Ym8-Qe-a9k" firstAttribute="bottom" secondItem="alk-hP-G7U" secondAttribute="bottom" id="7XI-Q1-wG9"/>
+                            <constraint firstItem="VUw-Vk-41m" firstAttribute="top" secondItem="Ym8-Qe-a9k" secondAttribute="top" id="8A8-tR-FgY"/>
                             <constraint firstAttribute="trailing" secondItem="S2x-Ck-EUa" secondAttribute="trailing" constant="-44" id="B86-hE-bV4"/>
                             <constraint firstAttribute="bottom" secondItem="Mdy-xT-Ust" secondAttribute="bottom" id="CHq-VI-ODM"/>
                             <constraint firstItem="alk-hP-G7U" firstAttribute="leading" secondItem="Ym8-Qe-a9k" secondAttribute="leading" constant="20" id="Cwz-CN-Keb"/>
@@ -107,14 +107,14 @@
                             <constraint firstItem="bm5-ca-YdS" firstAttribute="leading" secondItem="nYs-w9-w4v" secondAttribute="leading" constant="-58" id="G7L-e1-ItS"/>
                             <constraint firstItem="jZn-25-N9R" firstAttribute="leading" secondItem="nYs-w9-w4v" secondAttribute="leading" constant="-50" id="JBG-bc-Rl5"/>
                             <constraint firstItem="jZn-25-N9R" firstAttribute="top" secondItem="Ym8-Qe-a9k" secondAttribute="top" constant="135" id="Low-63-CHD"/>
+                            <constraint firstItem="Ym8-Qe-a9k" firstAttribute="trailing" secondItem="VUw-Vk-41m" secondAttribute="trailing" constant="20" id="QLe-84-p7q"/>
                             <constraint firstItem="Mdy-xT-Ust" firstAttribute="leading" secondItem="Ym8-Qe-a9k" secondAttribute="leading" id="U26-xz-HCV"/>
                             <constraint firstAttribute="trailing" secondItem="JER-Pg-1cC" secondAttribute="trailing" constant="-44" id="Wbp-Og-vG3"/>
                             <constraint firstItem="Ym8-Qe-a9k" firstAttribute="trailing" secondItem="alk-hP-G7U" secondAttribute="trailing" constant="20" id="Z9J-Ut-vwe"/>
                             <constraint firstItem="Mdy-xT-Ust" firstAttribute="top" secondItem="nYs-w9-w4v" secondAttribute="top" id="gst-r7-fv2"/>
-                            <constraint firstItem="VUw-Vk-41m" firstAttribute="top" secondItem="Ym8-Qe-a9k" secondAttribute="top" id="iOy-QO-sea"/>
-                            <constraint firstItem="Ym8-Qe-a9k" firstAttribute="trailing" secondItem="VUw-Vk-41m" secondAttribute="trailing" constant="20" id="mpO-1O-4DE"/>
                             <constraint firstItem="Mdy-xT-Ust" firstAttribute="trailing" secondItem="Ym8-Qe-a9k" secondAttribute="trailing" id="nfl-d1-1Qh"/>
                             <constraint firstItem="JER-Pg-1cC" firstAttribute="top" secondItem="Ym8-Qe-a9k" secondAttribute="top" constant="171" id="o0C-Aj-qrq"/>
+                            <constraint firstItem="JER-Pg-1cC" firstAttribute="leading" secondItem="VUw-Vk-41m" secondAttribute="leading" id="z1w-KP-tgb"/>
                         </constraints>
                     </view>
                     <connections>

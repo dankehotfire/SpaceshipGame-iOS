@@ -9,4 +9,4 @@
 "elM-ci-u25.normalTitle" = "Настройки";
 
 /* Class = "UILabel"; text = "Current player:"; ObjectID = "m2d-D8-53A"; */
-"m2d-D8-53A.text" = "Текущий игрок";
+"m2d-D8-53A.text" = "Текущий игрок:";

@@ -18,7 +18,7 @@
 "U3e-DN-oSH.text" = "Корабль:";
 
 /* Class = "UIButton"; normalTitle = "Apply changes"; ObjectID = "iR7-ks-9Df"; */
-"iR7-ks-9Df.normalTitle" = "Применить изменения";
+"iR7-ks-9Df.normalTitle" = "Сохранить";
 
 /* Class = "UIButton"; normalTitle = "Back to menu"; ObjectID = "riV-rS-UMM"; */
 "riV-rS-UMM.normalTitle" = "Вернуться в меню";

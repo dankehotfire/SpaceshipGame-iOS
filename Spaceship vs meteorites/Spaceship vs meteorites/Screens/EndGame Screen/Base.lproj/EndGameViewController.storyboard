@@ -8,8 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Recursive_Casual-Bold.ttf">
-            <string>RecursiveCasual-Bold</string>
+        <array key="Alegreya-Medium.ttf">
+            <string>Alegreya-Medium</string>
+        </array>
+        <array key="Alegreya-Regular.ttf">
+            <string>Alegreya-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -24,13 +27,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endGame_background" translatesAutoresizingMaskIntoConstraints="NO" id="GeT-DZ-Cdz">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ljp-Be-m0z">
-                                <rect key="frame" x="40" y="609" width="152" height="180"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ljp-Be-m0z">
+                                <rect key="frame" x="40" y="613" width="91" height="133"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXX-Yv-5Tf">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="60"/>
-                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
-                                        <state key="normal" title="Restart">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="41"/>
+                                        <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="30"/>
+                                        <state key="normal" title="Restart" backgroundImage="ic_button_back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -38,9 +41,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pU-5h-eQ9">
-                                        <rect key="frame" x="12" y="60" width="128" height="60"/>
-                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
-                                        <state key="normal" title="Rating">
+                                        <rect key="frame" x="0.0" y="46" width="91" height="41"/>
+                                        <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="30"/>
+                                        <state key="normal" title="Rating" backgroundImage="ic_button_back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -48,9 +51,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATp-cs-HZt">
-                                        <rect key="frame" x="23.5" y="120" width="105" height="60"/>
-                                        <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
-                                        <state key="normal" title="Menu">
+                                        <rect key="frame" x="0.0" y="92" width="91" height="41"/>
+                                        <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="30"/>
+                                        <state key="normal" title="Menu" backgroundImage="ic_button_back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -59,25 +62,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-es-iEr">
-                                <rect key="frame" x="172" y="64" width="222" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-es-iEr">
+                                <rect key="frame" x="303" y="64" width="91" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="dae-db-5JX"/>
-                                    <constraint firstAttribute="width" constant="222" id="tNr-I8-ZMt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkS-VZ-7qH">
-                                <rect key="frame" x="85.5" y="421" width="243" height="54"/>
-                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="45"/>
+                                <rect key="frame" x="86" y="417.5" width="242" height="61.5"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wty-Oo-bQ8">
-                                <rect key="frame" x="268" y="117" width="30" height="60"/>
-                                <fontDescription key="fontDescription" name="RecursiveCasual-Bold" family="Recursive Casual" pointSize="50"/>
+                                <rect key="frame" x="336" y="117" width="25.5" height="64"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="47"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -110,6 +112,7 @@
     </scenes>
     <resources>
         <image name="endGame_background" width="793.5" height="1122.5"/>
+        <image name="ic_button_back" width="91" height="22"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
