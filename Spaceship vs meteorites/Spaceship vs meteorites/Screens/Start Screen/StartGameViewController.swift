@@ -13,11 +13,16 @@ class StartGameViewController: UIViewController {
     @IBOutlet private weak var playButton: UIButton!
     @IBOutlet private weak var settingsButton: UIButton!
     @IBOutlet private weak var reminderLabel: UILabel!
-    @IBOutlet weak var currentPlayerLabel: UILabel!
+    @IBOutlet private weak var playerNameLabel: UILabel!
+    @IBOutlet private weak var currentPlayerTitleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         startSettings()
+
+        reminderLabel.text = NSLocalizedString("start_screen_attention", comment: "")
+        currentPlayerTitleLabel.text = NSLocalizedString("start_screen_current_player_title", comment: "")
+        settingsButton.titleLabel?.text = NSLocalizedString("start_screen_player_name", comment: "")
     }
 
     @IBAction private func playButtonPressed(_ sender: UIButton) {
@@ -42,7 +47,7 @@ class StartGameViewController: UIViewController {
     private func startSettings() {
         playButton.dropShadow(color: .white, opacity: 0.5, offSet: CGSize(width: 0, height: 0.3), radius: 5)
         settingsButton.cornerRadius(settingsButton.bounds.height / 3)
-        currentPlayerLabel.text = UserSettings.shared.currentPlayer?.nickname ?? "not selected"
+        playerNameLabel.text = UserSettings.shared.currentPlayer?.nickname ?? NSLocalizedString("start_screen_player_name", comment: "")
         selectedShip.setImage(UIImage(named: UserSettings.shared.currentPlayer?.spaceShip ?? "" ), for: .normal)
         reminderLabel.isHidden = true
     }

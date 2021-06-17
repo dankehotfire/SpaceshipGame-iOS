@@ -42,23 +42,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-9V-sHb">
-                                <rect key="frame" x="20" y="131" width="374" height="41"/>
+                                <rect key="frame" x="20" y="144.5" width="374" height="27.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ship" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-um-a4y">
-                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="41"/>
-                                        <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHQ-Zp-urZ">
-                                        <rect key="frame" x="127.5" y="0.0" width="119" height="41"/>
-                                        <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="30"/>
+                                        <rect key="frame" x="127.5" y="0.0" width="119" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZG-ey-5Yp">
-                                        <rect key="frame" x="254.5" y="0.0" width="119.5" height="41"/>
-                                        <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="30"/>
+                                        <rect key="frame" x="254.5" y="0.0" width="119.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -80,6 +80,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mainTitle" destination="4vP-G0-L7s" id="kKM-am-w9V"/>
+                        <outlet property="nameTitle" destination="qHQ-Zp-urZ" id="TYi-o6-HKQ"/>
+                        <outlet property="scoreTitle" destination="pZG-ey-5Yp" id="bok-8g-kSW"/>
+                        <outlet property="shipTitle" destination="cRC-um-a4y" id="awi-RC-qml"/>
                         <outlet property="tableView" destination="mOZ-Ok-WRf" id="NQC-Oq-c2b"/>
                     </connections>
                 </viewController>

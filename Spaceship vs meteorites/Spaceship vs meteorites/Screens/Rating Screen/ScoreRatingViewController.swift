@@ -10,6 +10,10 @@ import UIKit
 class ScoreRatingViewController: UIViewController {
     private var resultModel = [ResultModel]()
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var mainTitle: UILabel!
+    @IBOutlet weak var shipTitle: UILabel!
+    @IBOutlet weak var nameTitle: UILabel!
+    @IBOutlet weak var scoreTitle: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,7 @@ class ScoreRatingViewController: UIViewController {
         loadResults()
     }
 
-    func loadResults() {
+    private func loadResults() {
         guard let folderPath = FileManager.createOrFindDirectory(named: "Results") else {
             assertionFailure()
             return
@@ -42,6 +46,13 @@ class ScoreRatingViewController: UIViewController {
                 resultModel.append(result)
             }
         }
+    }
+
+    private func localizable() {
+        mainTitle.text = NSLocalizedString("rating_screen_title", comment: "")
+        shipTitle.text = NSLocalizedString("rating_screen_ship", comment: "")
+        nameTitle.text = NSLocalizedString("rating_screen_nickname", comment: "")
+        scoreTitle.text = NSLocalizedString("rating_screen_score", comment: "")
     }
 }
 

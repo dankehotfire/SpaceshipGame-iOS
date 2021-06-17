@@ -102,6 +102,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="endGameTitle" destination="MkS-VZ-7qH" id="wVL-va-idc"/>
+                        <outlet property="menuButtonTitle" destination="ATp-cs-HZt" id="XEF-bQ-Rrc"/>
+                        <outlet property="ratingButtonTitle" destination="6pU-5h-eQ9" id="Ig1-BF-Ouf"/>
+                        <outlet property="restartButtonTitle" destination="uXX-Yv-5Tf" id="kcz-FP-st5"/>
                         <outlet property="scoreLabel" destination="wty-Oo-bQ8" id="omk-ZO-RZB"/>
                     </connections>
                 </viewController>

@@ -12,6 +12,10 @@ class SettingsViewController: UIViewController {
     var selectedGameLevel: GameLevel?
     let defaults = UserDefaults.standard
 
+    @IBOutlet private weak var settingsTitle: UILabel!
+    @IBOutlet private weak var nicknameLabel: UILabel!
+    @IBOutlet private weak var gameLevelLabel: UILabel!
+    @IBOutlet private weak var spaceshipLabel: UILabel!
     @IBOutlet private weak var nicknameTextField: UITextField!
     @IBOutlet private weak var applyChangesButton: UIButton!
     @IBOutlet private weak var backToMenuButton: UIButton!
@@ -21,12 +25,15 @@ class SettingsViewController: UIViewController {
     @IBOutlet private weak var firstShipButton: SelectButton!
     @IBOutlet private weak var secondShipButton: SelectButton!
     @IBOutlet private weak var thirdShipButton: SelectButton!
+    @IBOutlet private weak var applyButtonTitle: UIButton!
+    @IBOutlet weak var backButtonTitle: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         nicknameTextField.returnKeyType = .done
         nicknameTextField.delegate = self
         startSettings()
+        localizable()
     }
 
     @IBAction private func gameLevelButtonPressed(_ sender: SelectButton) {
@@ -104,6 +111,18 @@ class SettingsViewController: UIViewController {
         easyLevelButton.selectedImage = image
         mediumLevelButton.selectedImage = image
         hardLevelButton.selectedImage = image
+    }
+
+    private func localizable() {
+        settingsTitle.text = NSLocalizedString("settings_screen_title", comment: "")
+        nicknameLabel.text = NSLocalizedString("settings_screen_level_nickname", comment: "")
+        gameLevelLabel.text = NSLocalizedString("settings_screen_level_title", comment: "")
+        spaceshipLabel.text = NSLocalizedString("settings_screen_ship_title", comment: "")
+        applyButtonTitle.titleLabel?.text = NSLocalizedString("settings_screen_save_button", comment: "")
+        backButtonTitle.titleLabel?.text = NSLocalizedString("settings_screen_back_button", comment: "")
+        easyLevelButton.titleLabel?.text = NSLocalizedString("settings_screen_level_easy", comment: "")
+        mediumLevelButton.titleLabel?.text = NSLocalizedString("settings_screen_level_medium", comment: "")
+        hardLevelButton.titleLabel?.text = NSLocalizedString("settings_screen_level_hard", comment: "")
     }
 }
 

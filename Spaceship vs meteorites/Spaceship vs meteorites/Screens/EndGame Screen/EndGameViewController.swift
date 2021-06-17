@@ -12,6 +12,10 @@ class EndGameViewController: UIViewController {
     var score = String()
 
     @IBOutlet private weak var scoreLabel: UILabel!
+    @IBOutlet private weak var endGameTitle: UILabel!
+    @IBOutlet private weak var restartButtonTitle: UIButton!
+    @IBOutlet private weak var ratingButtonTitle: UIButton!
+    @IBOutlet private weak var menuButtonTitle: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,5 +54,13 @@ class EndGameViewController: UIViewController {
         }
 
         Manager.saveScore(nickname: nickname, ship: ship, score: score)
+    }
+
+    private func localizable() {
+        scoreLabel.text = NSLocalizedString("end_game_screen_score", comment: "")
+        endGameTitle.text = NSLocalizedString("end_game_screen_game_over", comment: "")
+        restartButtonTitle.titleLabel?.text = NSLocalizedString("end_game_screen_restart", comment: "")
+        ratingButtonTitle.titleLabel?.text = NSLocalizedString("end_game_screen_rating", comment: "")
+        menuButtonTitle.titleLabel?.text = NSLocalizedString("end_game_screen_menub", comment: "")
     }
 }
