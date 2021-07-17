@@ -23,6 +23,7 @@ class ScoreRatingViewController: UIViewController {
         tableView.tableFooterView = UIView()
 
         loadResults()
+        localizable()
     }
 
     private func loadResults() {

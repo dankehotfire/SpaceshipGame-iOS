@@ -22,7 +22,7 @@ class StartGameViewController: UIViewController {
 
         reminderLabel.text = NSLocalizedString("start_screen_attention", comment: "")
         currentPlayerTitleLabel.text = NSLocalizedString("start_screen_current_player_title", comment: "")
-        settingsButton.titleLabel?.text = NSLocalizedString("start_screen_player_name", comment: "")
+            settingsButton.setTitle(NSLocalizedString("start_screen_settings", comment: ""), for: .normal)
     }
 
     @IBAction private func playButtonPressed(_ sender: UIButton) {

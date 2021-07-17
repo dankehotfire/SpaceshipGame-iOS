@@ -11,6 +11,7 @@ class EndGameViewController: UIViewController {
     var currentShip = UIButton()
     var score = String()
 
+    @IBOutlet private weak var scoreTitleLabel: UILabel!
     @IBOutlet private weak var scoreLabel: UILabel!
     @IBOutlet private weak var endGameTitle: UILabel!
     @IBOutlet private weak var restartButtonTitle: UIButton!
@@ -21,6 +22,7 @@ class EndGameViewController: UIViewController {
         super.viewDidLoad()
         scoreLabel.text = score
         saveResult()
+        localizable()
     }
 
     @IBAction private func restartButtonPressed(_ sender: UIButton) {
@@ -57,10 +59,10 @@ class EndGameViewController: UIViewController {
     }
 
     private func localizable() {
-        scoreLabel.text = NSLocalizedString("end_game_screen_score", comment: "")
+        scoreTitleLabel.text = NSLocalizedString("end_game_screen_score", comment: "")
         endGameTitle.text = NSLocalizedString("end_game_screen_game_over", comment: "")
-        restartButtonTitle.titleLabel?.text = NSLocalizedString("end_game_screen_restart", comment: "")
-        ratingButtonTitle.titleLabel?.text = NSLocalizedString("end_game_screen_rating", comment: "")
-        menuButtonTitle.titleLabel?.text = NSLocalizedString("end_game_screen_menub", comment: "")
+        restartButtonTitle.setTitle(NSLocalizedString("end_game_screen_restart", comment: ""), for: .normal)
+            ratingButtonTitle.setTitle(NSLocalizedString("end_game_screen_rating", comment: ""), for: .normal)
+        menuButtonTitle.setTitle(NSLocalizedString("end_game_screen_menu", comment: ""), for: .normal)
     }
 }

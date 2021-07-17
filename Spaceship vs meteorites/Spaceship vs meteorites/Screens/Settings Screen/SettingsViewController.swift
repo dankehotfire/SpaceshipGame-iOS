@@ -118,11 +118,11 @@ class SettingsViewController: UIViewController {
         nicknameLabel.text = NSLocalizedString("settings_screen_level_nickname", comment: "")
         gameLevelLabel.text = NSLocalizedString("settings_screen_level_title", comment: "")
         spaceshipLabel.text = NSLocalizedString("settings_screen_ship_title", comment: "")
-        applyButtonTitle.titleLabel?.text = NSLocalizedString("settings_screen_save_button", comment: "")
-        backButtonTitle.titleLabel?.text = NSLocalizedString("settings_screen_back_button", comment: "")
-        easyLevelButton.titleLabel?.text = NSLocalizedString("settings_screen_level_easy", comment: "")
-        mediumLevelButton.titleLabel?.text = NSLocalizedString("settings_screen_level_medium", comment: "")
-        hardLevelButton.titleLabel?.text = NSLocalizedString("settings_screen_level_hard", comment: "")
+        applyButtonTitle.setTitle(NSLocalizedString("settings_screen_save_button", comment: ""), for: .normal)
+        backButtonTitle.setTitle(NSLocalizedString("settings_screen_back_button", comment: ""), for: .normal)
+        easyLevelButton.setTitle(NSLocalizedString("settings_screen_level_easy", comment: ""), for: .normal)
+        mediumLevelButton.setTitle(NSLocalizedString("settings_screen_level_medium", comment: ""), for: .normal)
+        hardLevelButton.setTitle(NSLocalizedString("settings_screen_level_hard", comment: ""), for: .normal)
     }
 }
 

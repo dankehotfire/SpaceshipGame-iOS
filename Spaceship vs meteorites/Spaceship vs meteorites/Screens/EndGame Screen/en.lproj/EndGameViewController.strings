@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Rating"; ObjectID = "6pU-5h-eQ9"; */
+"6pU-5h-eQ9.normalTitle" = "Rating";
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "ATp-cs-HZt"; */
+"ATp-cs-HZt.normalTitle" = "Menu";
+
+/* Class = "UILabel"; text = "GAME OVER"; ObjectID = "MkS-VZ-7qH"; */
+"MkS-VZ-7qH.text" = "GAME OVER";
+
+/* Class = "UILabel"; text = "Score"; ObjectID = "n7a-es-iEr"; */
+"n7a-es-iEr.text" = "Score";
+
+/* Class = "UIButton"; normalTitle = "Restart"; ObjectID = "uXX-Yv-5Tf"; */
+"uXX-Yv-5Tf.normalTitle" = "Restart";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "wty-Oo-bQ8"; */
+"wty-Oo-bQ8.text" = "0";

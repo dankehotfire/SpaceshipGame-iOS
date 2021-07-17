@@ -2,7 +2,7 @@
   Localizable.strings
   Spaceship vs meteorites
 
-  Created by Danil Nurgaliev on 15.06.2021.
+  Created by Danil Nurgaliev on 17.07.2021.
   
 */
 
@@ -59,4 +59,3 @@
 "rating_screen_score" = "Score";
 
 "rating_screen_nickname" = "Nickname";
-
