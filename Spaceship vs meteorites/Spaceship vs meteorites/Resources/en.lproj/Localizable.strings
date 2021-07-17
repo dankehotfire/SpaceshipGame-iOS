@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  Spaceship vs meteorites
+
+  Created by Danil Nurgaliev on 17.07.2021.
+  
+*/
+
+// Start screen
+
+"start_screen_title" = "Space Racing";
+
+"start_screen_attention" = "Please, go to settings and select your game profile";
+
+"start_screen_current_player_title" = "Current player:";
+
+"start_screen_player_name" = "not selected";
+
+"start_screen_settings" = "Settings";
+
+// Settings screen
+
+"settings_screen_title" = "Settings";
+
+"settings_screen_level_title" = "Game level";
+
+"settings_screen_level_hard" = "hard";
+
+"settings_screen_level_medium" = "medium";
+
+"settings_screen_level_easy" = "easy";
+
+"settings_screen_level_nickname" = "Nickname";
+
+"settings_screen_ship_title" = "Ship";
+
+"settings_screen_save_button" = "Save";
+
+"settings_screen_back_button" = "Back to menu";
+
+// EndGame screen
+
+"end_game_screen_score" = "Score:";
+
+"end_game_screen_menu" = "Menu";
+
+"end_game_screen_game_over" = "Game over";
+
+"end_game_screen_rating" = "Rating";
+
+"end_game_screen_restart" = "Restart";
+
+// Rating screen
+
+"rating_screen_title" = "Best results";
+
+"rating_screen_ship" = "Ship";
+
+"rating_screen_score" = "Score";
+
+"rating_screen_nickname" = "Nickname";

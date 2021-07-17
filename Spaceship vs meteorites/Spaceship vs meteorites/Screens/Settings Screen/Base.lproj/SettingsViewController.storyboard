@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hZp-6o-1qk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hZp-6o-1qk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -194,14 +194,20 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="applyButtonTitle" destination="iR7-ks-9Df" id="aBk-pc-DmO"/>
                         <outlet property="applyChangesButton" destination="iR7-ks-9Df" id="grP-0W-74U"/>
+                        <outlet property="backButtonTitle" destination="riV-rS-UMM" id="usm-cZ-L3Y"/>
                         <outlet property="backToMenuButton" destination="riV-rS-UMM" id="vvz-Qf-QQq"/>
                         <outlet property="easyLevelButton" destination="mgn-eH-IxT" id="bEf-wY-QQM"/>
                         <outlet property="firstShipButton" destination="Pop-th-heX" id="OsP-De-ecE"/>
+                        <outlet property="gameLevelLabel" destination="xKH-Dj-F33" id="Xo5-mR-36X"/>
                         <outlet property="hardLevelButton" destination="CNS-HT-6in" id="OqM-6B-IKJ"/>
                         <outlet property="mediumLevelButton" destination="wBi-Rh-nhE" id="PSV-zB-2p8"/>
+                        <outlet property="nicknameLabel" destination="PeD-Me-DFk" id="o3c-6s-maS"/>
                         <outlet property="nicknameTextField" destination="g9V-E5-p62" id="gc1-Fk-KUw"/>
                         <outlet property="secondShipButton" destination="ksF-Jk-6P4" id="nn8-CY-LC3"/>
+                        <outlet property="settingsTitle" destination="2fw-Mv-hj0" id="oYA-Y6-2RS"/>
+                        <outlet property="spaceshipLabel" destination="U3e-DN-oSH" id="a5N-5g-6hw"/>
                         <outlet property="thirdShipButton" destination="dR8-aS-4PK" id="MdV-jR-zdN"/>
                     </connections>
                 </viewController>
