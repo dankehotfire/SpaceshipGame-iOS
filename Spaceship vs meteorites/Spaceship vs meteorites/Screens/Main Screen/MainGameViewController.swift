@@ -24,11 +24,14 @@ class MainGameViewController: UIViewController {
         startSettings()
         startTimer()
     }
+
     @IBAction private func onPan(_ sender: UIPanGestureRecognizer) {
         let move = sender.translation(in: view)
+
         if let view = sender.view {
             view.center = CGPoint(x: view.center.x + move.x, y: view.center.y + move.y)
         }
+
         sender.setTranslation(CGPoint.zero, in: view)
     }
 
@@ -69,10 +72,12 @@ class MainGameViewController: UIViewController {
                 assertionFailure()
                 return
             }
+
             guard var score = Int(textScore) else {
                 assertionFailure()
                 return
             }
+
             progressView.progress += 0.1
             score += 10
             scoreLabel.text = "\(score)"

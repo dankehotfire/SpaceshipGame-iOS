@@ -26,7 +26,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet private weak var secondShipButton: SelectButton!
     @IBOutlet private weak var thirdShipButton: SelectButton!
     @IBOutlet private weak var applyButtonTitle: UIButton!
-    @IBOutlet weak var backButtonTitle: UIButton!
+    @IBOutlet private weak var backButtonTitle: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()

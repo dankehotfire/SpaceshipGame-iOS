@@ -101,6 +101,7 @@
                             <constraint firstItem="n7a-es-iEr" firstAttribute="top" secondItem="MBI-d2-QQf" secondAttribute="top" constant="20" id="wTh-rf-zNQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="F0H-ec-GoA"/>
                     <connections>
                         <outlet property="endGameTitle" destination="MkS-VZ-7qH" id="wVL-va-idc"/>
                         <outlet property="menuButtonTitle" destination="ATp-cs-HZt" id="XEF-bQ-Rrc"/>

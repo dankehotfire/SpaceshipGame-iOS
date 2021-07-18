@@ -34,7 +34,6 @@ class EndGameViewController: UIViewController {
 
     @IBAction private func ratingButtonPressed(_ sender: UIButton) {
         let destinationVC = ScoreRatingViewController.instantiate()
-        destinationVC.modalPresentationStyle = .fullScreen
         present(destinationVC, animated: true, completion: nil)
     }
 
